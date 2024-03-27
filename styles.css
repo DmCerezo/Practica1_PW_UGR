@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body, header, footer, aside, main {
+    margin: 0;
+    padding: 0;
+}
+/*Caracteristicas para web resposive*/
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
+    min-height: 100vh;
+}
+header, footer {
+    grid-column: 1 / -1;
+    background-color: #333;
+    color: #fff;
+    padding: 1vh; /*Ocupa 30% del en altura*/
+}
+header {
+    grid-row: 1;
+    align-items: center;
+    padding: 0%;
+    font-family:  Georgia;
+    font-size: 1.25rem;
+
+}
+
+header img {
+  filter: drop-shadow(6px 5px 4px #012521);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+footer {
+    grid-row: 3;
+
+}
+aside {
+    background-color: #989499;
+    padding: 0.9375rem; /*Ocupa 20% del en anchura*/
+    width: 20vw;
+}
+
+
+.side-nav nav a{
+color: #81f1f7;
+padding: 20px;
+margin-right: 0%;
+display: block;
+text-decoration: none;
+}
+nav a:hover:not(.active) {
+  background-color: #111;
+}
+
+main {
+    padding: 10px;
+}
+
+.logo{
+    max-width: 7rem;
+    padding: 0.625rem;
+    margin-left: 0.625rem;
+}
+
+.head-top{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Boton Alta header
+
+a.button:link, a.button:visited {
+  background-color: #bee893;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.button:hover, a.button:active {
+    background-color: #74e0aa;
+  }
+*/
+
+/*Formulario*/
+
+.form-head-top{
+    max-width: 20vw;
+}
+  input[type=text], select {
+    width: 90%;
+    padding: 0.5rem 0.9375rem;
+    margin: px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  input[type=password], select {
+    width: 90%;
+    padding: 0.5rem 0.9375rem;
+    margin: 0.125rem 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  button[type=submit] {
+    width: 90%;
+    background-color: #81f1f7;
+    color: white;
+    margin: 0.125rem 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #b1ebee;
+  }
