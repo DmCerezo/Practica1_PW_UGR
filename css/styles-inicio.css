@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+}
+.div1 {
+position: relative;
+width: auto;
+max-width: 100%;
+}
+.div-socra{
+top: 44%;
+left: 67%;
+position: absolute;
+width: 25%;
+z-index: 1;
+filter: drop-shadow(6px 5px 4px #012521);
+animation: fadeIn 0.5s ease; 
+}
+@keyframes fadeIn {
+    0% {opacity: 0;
+    filter: blur(5px);}
+    30%{
+        opacity: 0.3;
+        filter: blur(4px);
+    }
+    60%{
+        opacity: 0.6;
+        filter: blur(3px);
+    }
+    80%{
+        opacity: 0.8;
+        filter: blur(1px);
+    }
+}
+
+.div-socra:hover{
+    transform: scale(1.03);
+    transition: all .8s;
+
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}

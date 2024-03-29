@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P1 Museo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
@@ -12,44 +12,50 @@
 <section class="container">
     <header>
         <ul class="head-top">
+            <!-- Logo -->
             <li>
-                <img class="logo" src="img/Logo.png" alt="Logo" >
+                <img class="logo" src="img/Logo.png" alt="Logo museo" >
             </li>
+            <!-- Nombre museo -->
             <li>
                 <h1>Museum New Leaf</h1>
             </li>
+            <!-- Login -->
             <li class="form-head-top">
-                <form id="loginform">
+                <form id="loginform" action="html/alta.html">
                     <input type="text" name="usuario" placeholder="Usuario" required>
                     <input type="password" placeholder="Contraseña" name="password" required>
                     <button type="submit" title="Alta" name="Alta">Alta</button>
                 </form>
             </li>
         </ul>
+        <!-- Barra de navegación -->
         <nav class="main-nav">
             <ul class ="nav-list">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="html/inicio.html" target="main_iframe">Inicio</a></li>
                 <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
+        <!-- Barra lateral de navegacion -->
     <aside class="side-nav">
-        <h2> Side Nav</h2>
+        <h2>Exposiciones</h2>
         <nav>
-            <a href="#link">Enlace 1</a>
-            <a href="#">Enlace 2</a>
-            <a href="#">Enlace 3</a>
+            <a href="https://en.wikipedia.org/wiki/Livyatan" target="main_iframe">Bichos</a>
+            <a href="peces.html" target="main_iframe">Peces</a>
+            <a href="fosiles.html" target="main_iframe">Fosiles</a>
+            <a href="arte.html" target="main_iframe">Arte</a>
         </nav>
     </aside>
+    <!-- Parte principal de la pagina -->
     <main>
-        <h2>Contenido Principal</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisi vel odio fermentum pharetra. Nam et lectus quis libero luctus vestibulum. Phasellus vehicula dolor vitae nisi auctor, id scelerisque magna fringilla.</p>
+        <iframe name="main_iframe"src="html/inicio.html" title="W3Schools Free Online Web Tutorials">
+        </iframe>
     </main>
     <footer>
-        <p>Pie de Página</p>
+        <p>Pie de Página           David Martín Cerezo 2024</p>
     </footer>
 </section>
 
