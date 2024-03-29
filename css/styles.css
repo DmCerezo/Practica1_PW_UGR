@@ -78,7 +78,11 @@ aside {
     padding: 0.9375rem; /*Ocupa 20% del en anchura*/
     width: 20vw;
 }
+@media all and (max-width:600px) {
 
+  .side-nav h2 {font-size: 300px;}
+
+}
 
 .side-nav nav a{
   color: #bcddc8;
@@ -88,9 +92,22 @@ aside {
   text-decoration: none;
   transition: background-color 0.3s;
 }
+.side-nav h2 {
+  margin-top: 0;
+  font-size: 25px;
+  padding: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: center;
+  background-color: #bebbbb;
+}
+
 nav a:hover:not(.active) {
   background-color: #111;
 }
+
+
+
 
 main {
     padding: 2px;

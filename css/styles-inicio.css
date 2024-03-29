@@ -12,36 +12,49 @@ position: relative;
 width: auto;
 max-width: 100%;
 }
-.div-socra{
+.div-socra, .div-bocadillo{
 top: 44%;
 left: 67%;
 position: absolute;
 width: 25%;
 z-index: 1;
 filter: drop-shadow(6px 5px 4px #012521);
-animation: fadeIn 0.5s ease; 
+animation: fadeIn 1.9s ease; 
 }
+
+.div-bocadillo{
+    left: 40%;
+    top : 8% ;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes fadeIn {
-    0% {opacity: 0;
-    filter: blur(5px);}
-    30%{
+    10% {opacity: 0;
+    filter: blur(7px);}
+    /* 30%{
         opacity: 0.3;
         filter: blur(4px);
     }
     60%{
         opacity: 0.6;
         filter: blur(3px);
-    }
+    } 
     80%{
         opacity: 0.8;
         filter: blur(1px);
-    }
+    } */
 }
 
 .div-socra:hover{
     transform: scale(1.03);
     transition: all .8s;
+}
 
+.div-bocadillo:hover{
+    transform: scale(1.03);
+    transition: all .8s;
 }
 
 img {
@@ -49,3 +62,101 @@ img {
     width: 100%;
     height: auto;
 }
+area{
+
+}
+.line-1{
+    position: inherit;
+    margin-top: 12%;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 3.6vw;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(60) 1s 1 normal both,
+             blinkTextCursor 800ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 10em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(49, 48, 48, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .section1 { grid-area: 1 / 1 / 2 / 2; 
+        background-color: #012521;
+    }
+    .section2 { grid-area: 1 / 2 / 2 / 3; 
+        background-color: #14a897;
+    }
+    .section3 { grid-area: 2 / 1 / 3 / 2; 
+        background-color: #488a0a;
+    }
+    .section4 { grid-area: 2 / 2 / 3 / 3; 
+        background-color: #db3005;
+    }
+  
+
+
+    /* The container for the image and text */
+.box {
+    position: relative;
+    display: inline-block;
+    width: 300px; /* Adjust this value to fit the size of your image */
+    height: 200px; /* Adjust this value to fit the size of your image */
+  }
+  
+  /* The title text */
+  .box .title {
+    position: absolute;
+    top: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease-out;
+  }
+  
+  /* The description text */
+  .box .description {
+    position: absolute;
+    bottom: -50px; /* Adjust this value to control the starting position of the description */
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease-out;
+  }
+  
+  /* Show the title and description when hovering over the box */
+  .box:hover .title {
+    top: 0px; /* Adjust this value to control the ending position of the title */
+    bottom: inherit;
+  }
+  
+  .box:hover .description {
+    top: 50px; /* Adjust this value to control the ending position of the description */
+    bottom: inherit;
+  }
+  
+  
