@@ -17,7 +17,7 @@
                 <img class="logo" src="img/Logo.png" alt="Logo museo" >
             </li>
             <!-- Nombre museo -->
-            <li>
+            <li class="logo">
                 <h1>Museum Socrates</h1>
             </li>
             <!-- Login -->
@@ -40,25 +40,20 @@
         </nav>
     </header>
         <!-- Barra lateral de navegacion -->
-    <aside class="side-nav">
-        <h2>Menú</h2>
-        <nav>
-            <h3>Exposiciones</h3>
-            <a href="https://en.wikipedia.org/wiki/Livyatan" target="main_iframe">Bichos</a>
-            <a href="peces.html" target="main_iframe">Peces</a>
-            <a href="fosiles.html" target="main_iframe">Fosiles</a>
-            <a href="arte.html" target="main_iframe">Arte</a>
-
-            <h3>Artistas</h3>
-            <a href="https://en.wikipedia.org/wiki/Livyatan" target="main_iframe">El Greco</a>
-            <a href="peces.html" target="main_iframe">Akira Toriyama</a>
-            <a href="peces.html" target="main_iframe">Totakeke</a>
-            <h3>Horarios</h3>
-            <a href="https://en.wikipedia.org/wiki/Livyatan" target="main_iframe">Horario Festivos</a>
-            <a href="peces.html" target="main_iframe">Horario Ordinario</a>
-            <h3>Ubicación</h3>
-            <a href="https://en.wikipedia.org/wiki/Livyatan" target="main_iframe">Bichos</a>
-        </nav>
+    <aside class="menu">
+        <nav class="side-menu">
+            <input type="checkbox" id="ossm" name="ossm">
+            <label for="ossm" title="Expand/Collapse Menu"></label>
+            <ul>
+              <li><a href="#"><i class="fas fa-home blue" title="Dashboard"></i> <span>Dashboard</span></a></li>
+              <li><a href="#"><i class="fas fa-file-import purple" title="Quotes"></i> <span>Quotes</span></a></li>
+              <li><a href="#"><i class="fas fa-file-export green" title="Orders"></i> <span>Orders</span></a></li>
+              <li><a href="#"><i class="fas fa-file-invoice-dollar orange" title="Invoices"></i> <span>Invoices</span></a></li>
+              <li><a href="#"><i class="fas fa-concierge-bell ice" title="eServices"></i> <span>eServices</span></a></li>
+              <li><a href="#"><i class="fas fa-chart-area red" title="Reports"></i> <span>Reports</span></a></li>
+              <li><a href="#"><i class="fas fa-user blue" title="Profile"></i> <span>Profile</span></a></li>
+            </ul>
+          </nav>
     </aside>
     <!-- Parte principal de la pagina -->
     <main>

@@ -1,7 +1,12 @@
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 *{
+  font-family:Montserrat;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size:16px;
 }
 :root{
   --main-color: #bef0d2;
@@ -27,18 +32,95 @@ header, footer {
     color: #fff;
     padding: 1vh; /*Ocupa 10% del en altura*/
 }
-header {
-    grid-row: 1;
-    align-items: center;
-    padding: 0%;
-    font-family:  Georgia;
-    font-size: 1.25rem;
+
+footer {
+    grid-row: 3;
+
+}
+aside {
+    background-color: #989499;
+    padding: 0.9375rem; 
+    width: 20vw; /*Ocupa 20% del en anchura*/
+}
+@media all and (max-width:600px) {
+
+  .side-nav h2 {font-size: 300px;}
 
 }
 
+
+main {
+    padding: 2px;
+}
+
+/* Barra superior  ------------------------------*/
+
+/* Imagen ------------------*/
 header img {
   filter: drop-shadow(6px 5px 4px #012521);
 }
+
+.logo{
+  max-width: 7rem;
+  padding: 0.625rem;
+  margin-left: 0.625rem;
+}
+/* Texto central ------------*/
+
+h1{
+font-size: 3vw;
+}
+@media screen and (max-width: 450px) {
+  .logo{
+    width: auto;
+    padding: 0;
+  }
+  h1 { 
+    font-size: 5vw
+  }
+}
+  
+
+/*Formulario ---------------*/
+
+.form-head-top{
+  max-width: 20vw;
+}
+input[type=text], select {
+  width: 90%;
+  padding: 0.5rem 0.9375rem;
+  margin: px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 90%;
+  padding: 0.5rem 0.9375rem;
+  margin: 0.125rem 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+button[type=submit] {
+  width: 90%;
+  background-color: #bcddc8;
+  color: white;
+  margin: 0.125rem 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button[type=submit]:hover {
+  background-color: var(--main-color);
+}
+
+/* Barra de navegacion superior------------------- */
 
 nav ul {
   list-style-type: none;
@@ -68,56 +150,10 @@ nav li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
-
-footer {
-    grid-row: 3;
-
-}
-aside {
-    background-color: #989499;
-    padding: 0.9375rem; /*Ocupa 20% del en anchura*/
-    width: 20vw;
-}
-@media all and (max-width:600px) {
-
-  .side-nav h2 {font-size: 300px;}
-
-}
-
-.side-nav nav a{
-  color: #bcddc8;
-  padding: 20px;
-  margin-right: 0%;
-  display: block;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-.side-nav h2 {
-  margin-top: 0;
-  font-size: 25px;
-  padding: 10px;
-  margin-left: -15px;
-  margin-right: -15px;
-  text-align: center;
-  background-color: #bebbbb;
-}
-
 nav a:hover:not(.active) {
   background-color: #111;
 }
 
-
-
-
-main {
-    padding: 2px;
-}
-
-.logo{
-    max-width: 7rem;
-    padding: 0.625rem;
-    margin-left: 0.625rem;
-}
 
 .head-top{
     list-style-type: none;
@@ -126,59 +162,8 @@ main {
     align-items: center;
 }
 
-/*Boton Alta header
 
-a.button:link, a.button:visited {
-  background-color: #bee893;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-a.button:hover, a.button:active {
-    background-color: #74e0aa;
-  }
-*/
 
-/*Formulario*/
-
-.form-head-top{
-    max-width: 20vw;
-}
-  input[type=text], select {
-    width: 90%;
-    padding: 0.5rem 0.9375rem;
-    margin: px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-  }
-  
-  input[type=password], select {
-    width: 90%;
-    padding: 0.5rem 0.9375rem;
-    margin: 0.125rem 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-  }
-  button[type=submit] {
-    width: 90%;
-    background-color: #bcddc8;
-    color: white;
-    margin: 0.125rem 0;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-  
-  button[type=submit]:hover {
-    background-color: var(--main-color);
-  }
 
   /* Estilo para pagina main con iframe */
   iframe{
@@ -188,3 +173,73 @@ a.button:hover, a.button:active {
     margin:0; 
     padding:0; 
   }
+
+
+
+  /* Menu lateral desplegable */
+  /* Esconder checkbox*/
+  nav.side-menu > input[type=checkbox] {
+    display:none;
+  }
+  /* //Move the UL below the <label> */
+  nav.side-menu > input[type=checkbox] + label {
+    margin:1em;
+  }
+  /* //Add the clickable icon to replace the checkbox */
+  nav.side-menu > input[type=checkbox] + label::after {
+    opacity:1;
+    color:#333;
+    font-family: "Font Awesome 5 Free";
+    content: "\f150";
+    font-size: 32px;
+    font-weight:900;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    transform:rotate(-90deg);
+    cursor: pointer;
+  }
+  /* //Swap the icon when the checkbox is checked */
+  nav.side-menu > input[type=checkbox]:checked + label::after {
+    transform:rotate(90deg);
+  }
+  /* //Hide the menu when the checkbox is unchecked */
+  nav.side-menu > input[type=checkbox]:checked + label + ul {
+    width:38px;
+    overflow:hidden;
+    span {
+      display:none;
+    }
+  }
+  
+  /* Just some CSS to prettify the menu slightly */
+
+  .side-menu {
+    overflow:hidden;
+    ul {
+      padding-inline-start:0px;
+      width:145px;
+    }
+    li {
+      margin:0;
+      border-bottom:solid 1px #dedede;
+      padding:15px 0;
+      position:relative;
+      list-style-type:none;
+    }
+    li a {
+      color:#6f6f6f;
+      text-decoration:none;
+    }
+    li a i {font-size:32px;margin:0 10px 0 0 ;}
+  }
+  .blue {color:#0598D1;}
+  .purple {color:#A05DED;}
+  .green {color:#56C833;}
+  .orange {color:#FD8342;}
+  .ice {color:#54CED5;}
+  .red {color:#F66666;}
