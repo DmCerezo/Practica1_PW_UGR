@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 *{
     padding: 0;
     margin: 0;
@@ -5,13 +7,29 @@
 
 /* Estilos generales */
 body {
-    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-family:Montserrat;
+    margin: 5%;
 }
+
+/* Div para animacion con saludo a la web ---------------*/
 .div1 {
 position: relative;
 width: auto;
 max-width: 100%;
+font-family:sans-serif;
+
 }
+.div1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.9) 90%, rgba(255, 255, 255, 1) 100%);
+    z-index: 1;
+}
+
 .div-socra, .div-bocadillo{
 top: 44%;
 left: 67%;
@@ -19,7 +37,7 @@ position: absolute;
 width: 25%;
 z-index: 1;
 filter: drop-shadow(6px 5px 4px #012521);
-animation: fadeIn 1.9s ease; 
+animation: fadeIn 2s ease; 
 }
 
 .div-bocadillo{
@@ -62,9 +80,7 @@ img {
     width: 100%;
     height: auto;
 }
-area{
 
-}
 .line-1{
     position: inherit;
     margin-top: 12%;
@@ -74,7 +90,7 @@ area{
     font-size: 3.6vw;
 }
 
-/* Animation */
+/* Animacion simulando escribir ------*/
 .anim-typewriter{
   animation: typewriter 2s steps(60) 1s 1 normal both,
              blinkTextCursor 800ms steps(44) infinite normal;
@@ -88,75 +104,75 @@ area{
   to{border-right-color: transparent;}
 }
 
+/* Texto */
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.it-txt{
+    font-size: 2.8vw;
+    width: 70%;
+    background: linear-gradient(90deg, rgba(45,32,0,1) 0%, rgba(69,54,0,1) 35%, rgba(176,110,0,1) 100%);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.it2-img {
+    width: 20vw;
+    filter: drop-shadow(6px 5px 4px #1d0112);
+    animation: animation 3s infinite ease;
+}
+
+@keyframes animation {
+    0% { transform: scale(1); } 
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); } 
+}
+
+
+/* Grid con cajas de informacion---------------------- */
 .parent {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    gap: 5%;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 2fr));
+    grid-row: inherit;
+}
+    .parent section img{    
+        border-radius: 12%;
+        object-fit:cover;
+        max-height: 300px;
     }
-    
-    .section1 { grid-area: 1 / 1 / 2 / 2; 
-        background-color: #012521;
+
+    .parent section img:hover{
+        animation: animation 3s ease;
+        filter: drop-shadow(0px 0px 3px #000000);
+    }   
+
+    p{
+        color: #494949;
     }
-    .section2 { grid-area: 1 / 2 / 2 / 3; 
-        background-color: #14a897;
+
+    .section1 img { 
+
     }
-    .section3 { grid-area: 2 / 1 / 3 / 2; 
-        background-color: #488a0a;
+
+    .section2 { 
+
     }
-    .section4 { grid-area: 2 / 2 / 3 / 3; 
-        background-color: #db3005;
-    }
-  
+    .section3 { 
 
 
-    /* The container for the image and text */
-.box {
-    position: relative;
-    display: inline-block;
-    width: 300px; /* Adjust this value to fit the size of your image */
-    height: 200px; /* Adjust this value to fit the size of your image */
-  }
-  
-  /* The title text */
-  .box .title {
-    position: absolute;
-    top: inherit;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    transition: all 0.5s ease-out;
-  }
-  
-  /* The description text */
-  .box .description {
-    position: absolute;
-    bottom: -50px; /* Adjust this value to control the starting position of the description */
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    transition: all 0.5s ease-out;
-  }
-  
-  /* Show the title and description when hovering over the box */
-  .box:hover .title {
-    top: 0px; /* Adjust this value to control the ending position of the title */
-    bottom: inherit;
-  }
-  
-  .box:hover .description {
-    top: 50px; /* Adjust this value to control the ending position of the description */
-    bottom: inherit;
-  }
-  
+    }
+    .section4 { 
+
+
+    }
+    .section5 { 
+
+    }
+    .section6 { 
+
+    }
   

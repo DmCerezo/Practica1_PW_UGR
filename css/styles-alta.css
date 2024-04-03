@@ -1,4 +1,7 @@
 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +10,7 @@
 
 body {
   background-image: url(../img/background.webp);
-  font-family: Arial, sans-serif;
+  font-family:Montserrat;
 }
 
 .form-register {
@@ -18,7 +21,6 @@ body {
   margin: auto;
   margin-top: 6.25rem;
   border-radius: 0.625rem;
-  font-family: Georgia;
   color: white;
   box-shadow: 0.4375rem 0.8125rem 2.3125rem #000;
 }
@@ -35,7 +37,6 @@ body {
   border-radius: 10px;
   margin-bottom: 16px;
   border: 1px solid #1fc580;
-  font-family: Georgia;
   font-size: 18px;
   color: white;
 }
