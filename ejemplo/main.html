@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Museo del Prado</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Museo del Prado</h1>
+                <input type="checkbox" id="sidebar-toggle"> <!-- Cambiamos el botón por un input checkbox -->
+                <label for="sidebar-toggle" class="sidebar-toggle">&#9776;</label> <!-- Etiqueta para el botón de alternar -->
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#colecciones">Colecciones</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#visita">Visita</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <form id="login-form">
+                        <input type="text" placeholder="Usuario" name="username">
+                        <input type="password" placeholder="Contraseña" name="password">
+                        <button type="submit">Iniciar Sesión</button>
+                    </form>
+                    <a href="#" id="register-link">Registrarse</a>
+                </div>
+            </div>
+        </header>
+    
+        <div class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="#exposiciones">Exposiciones</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#horarios">Horarios y Tarifas</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </div>
+    
+    <section id="inicio" class="section">
+        <div class="container">
+            <h2>Bienvenido al Museo del Prado</h2>
+            <p>Texto de introducción...</p>
+        </div>
+    </section>
+
+    <section id="colecciones" class="section">
+        <div class="container">
+            <h2>Colecciones</h2>
+            <p>Información sobre las colecciones...</p>
+        </div>
+    </section>
+
+    <section id="eventos" class="section">
+        <div class="container">
+            <h2>Eventos</h2>
+            <p>Próximos eventos...</p>
+        </div>
+    </section>
+
+    <section id="visita" class="section">
+        <div class="container">
+            <h2>Visita</h2>
+            <p>Información sobre cómo visitar el museo...</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Información de contacto...</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Museo del Prado</p>
+        </div>
+    </footer>
+</body>
+</html>

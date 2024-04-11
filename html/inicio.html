@@ -5,75 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museo Virtual de Arte Universal</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
-    <link rel="stylesheet" href="../css/styles-inicio.css"> <!-- Enlaza tu archivo de estilos CSS aquí -->
+    <link rel="stylesheet" href="../css/styles-inicio.css"> 
 </head>
 <body>
 
-    <div class="div1"> 
-        <img class="img_museo" usemap="map" src="../img/museum.jpg" alt="Imagen entrada museo">
-        
-        <!-- Map no funciona -->
-        <map name="map">
-                <area target="" alt="Entrar al museo" title="Entrar al Museo" href="#section1" coords="522,415,754,242" shape="rect">
-        </map>        
+  <!-- HEADER -->
+  <header>
 
-        <div class="div-socra"><img class="img_socrates" src="../img/Socrates.png" alt="Socrates guia del museo"></div>
-        <div class="div-bocadillo" >
-            <img src="../img/prueba_bocadillo.png">
-            <p class="line-1 anim-typewriter">¡Bienvenido al Museo!</p>
+    <!-- Presentacion museo Paralax -->
+    <section class="cont1"> 
+        <div class="div-socra"><img src="../img/Socrates.png" alt="Socrates guia del museo"></div>
+            <div class="div-bocadillo" >
+                <img src="../img/prueba_bocadillo.png">
+                <p class="line-1 anim-escrib">¡Bienvenido al Museo!</p>
+            </div>
         </div>
-    </div>
-    
-    <section class="presentacion">
-        <div class="it-txt"><h1>  ¡Ultimas Novedades! </h1></div>
+    </section>
+
+    <!-- Nombre museo -->
+    <section id="PresentacionMuseo" class="Presenta-Museo">
+        <div class="it-txt"><h1>  MUSEO SOCRATES </h1></div>
+        <div class="it2-img"><img  src="../img/colums.png"></div>
+        <div class="banner"></div>
+    </section>
+
+    <!-- Mas info museo Paralax -->
+    <section class="cont2"> 
+      
+      <div class="div-socra"><img class="img_socrates" src="../img/Socrates2abajo.png" alt="Socrates guia del museo"></div>
+      <div class="div-bocadillo2" >
+        <img src="../img/prueba_bocadillo.png">
+        <p class="line-1 anim-escrib1">Me llamo Socrates y seré su guía!</p>
+        <p class="line-2 anim-escrib2">El museo ofrece una gran variedad de arte.</p>
+        <p class="line-2 anim-escrib3">Pintura, Escultura, Zoología, Paleontología...</p>
+        <p class="line-2 anim-escrib4"><b> !Espero que disfrute mucho su visita!</b></p>
+      </div>
+    </section> 
+
+    <!-- Seccion de novedades de museo------- -->
+    <section id="Exposiciones" class="presentacion1">
+      <div class="it-txt"><h1>  ¡Ultimas Novedades! </h1></div>
+      <div class="it2-img"><img  src="../img/star-icon.png"></div>
+      <div class="banner"></div>
+    </section>
+
+  </header>
+
+<!-- MAIN -->
+ <main>
+
+    <!-- Carrusel de novedades -->
+    <section class="carrusel">
+        <a href="seccion-exposiciones.html">
+        <section class="carrusel">
+          <ul class="slides">
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <!-- Primer slide -->
+            <li class="slide-container">
+                <section class="slide-image">
+                    <img src="../img/cuadro-midjourny-carrusel.jpg" alt="pintura IA" width="100" height="50">
+                    <article>   
+                        <h2 class="title">Artistas de siglo XXI</h2>
+                        <p class="description">Te presentamos nuestras nueva coleccion de pintura generada por la Inteligencia Artifial. ¡El futuro es hoy!.<br> <b>Disponible hasta el 2/7/2024</b></p>
+                    </article>
+                 </section>
+              <section class="carrusel-controls">
+                <label for="img-3" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-2" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </section>
+            <!-- Segundo slide -->
+            </li>
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+              <section class="slide-image">
+                <img src="../img/foto-bicho-carrusel.jpg">
+                <article>   
+                    <h2 class="title">Maestros del camuflaje</h2>
+                    <p class="description">Descubre las fascinates insectos invisibles y todos sus perfectos camuflajes con el medio.<br> <b>Disponible hasta el 28/07/2024</b></p>
+                </article>
+            </section>
+              <section class="carrusel-controls">
+                <label for="img-1" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-3" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </section>
+            </li>
+            <!-- Tercer slide -->
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+              <section class="slide-image">
+                <img src="../img/cuadro-rembrand-carrusell.jpg">
+                <article>
+                    <h2 class="title">Arte a la fuga</h2>
+                    <p class="description">Descubre la fascinante historia que se oculta detras del Robo de un cuadro.<br> <b>Disponible hasta el 29/06/2024</b></p>
+                </article>
+            </section>
+              <section class="carrusel-controls">
+                <label for="img-2" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-1" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </section>
+            </li>
+            <!-- Punto para elegir en el carrusel -->
+            <section class="carrusel-ps">
+              <label for="img-1" class="carrusel-p" id="img-p-1"></label>
+              <label for="img-2" class="carrusel-p" id="img-p-2"></label>
+              <label for="img-3" class="carrusel-p" id="img-p-3"></label>
+            </section>
+          </ul>
+        </section>
+        </a>
+    </section>
+
+    <!-- Seccion de fija del museo -->
+    <section id="Coleccion" class="presentacion">
+        <div class="it-txt"><h1>  ¡Nuestro Museo! </h1></div>
         <div class="it2-img"><img  src="../img/Museo-3D.png"></div>
+        <div class="banner"></div>
     </section>
 
     <section class="parent">
+
         <section class="section1">
-            <img src="../img/pintura-conde-de-orgaz.jpg" alt="Pintura conde de orgaz" width="100" height="50">
-            <h2 class="title">Pintura historica</h2>
-            <p class="description">Explora nuestra colección de pinturas clásicas y sumérgete en la historia con esta icónica obra maestra que retrata el legendario entierro del Conde de Orgaz, una joya del arte renacentista.</p>
-        </section>
+            <a href="coleccion.html" target="main_iframe"><img src="../img/pintura-conde-de-orgaz.jpg" alt="Pintura conde de orgaz" width="100" height="50"></a>
+            <article>
+              <h2 class="title">Pintura historica</h2>
+              <p class="description">Explora nuestra colección de pinturas clásicas y sumérgete en la historia con esta icónica obra maestra que retrata el legendario entierro del Conde de Orgaz, una joya del arte renacentista.</p>
+            </article> 
+          </section>
 
         <section class="section2">
-
-            <img src="../img/img-pez-jurel.jpg" alt="imagen jurel" width="300" height="200">
+          <a href="coleccion.html" target="main_iframe"><img src="../img/img-pez-jurel.jpg" alt="imagen jurel" width="300" height="200"></a>
+          <article>  
             <h2 class="title">La diversidad del mar</h2>
             <p class="description">Descubre la fascinante vida marina a través de nuestra sección dedicada al océano, donde podrás explorar la biodiversidad submarina y conocer más sobre la extraordinaria especie del pez Jurel.</p>
-
+          </article> 
         </section>
 
         <section class="section3"> 
-            <img src="../img/img-bicho-libelula.jpg" alt="imagen libelula" width="300" height="200">
+          <a href="coleccion.html" target="main_iframe"><img src="../img/img-bicho-libelula.jpg" alt="imagen libelula" width="300" height="200"></a>
+          <article>  
             <h2 class="title">La belleza de la naturaleza</h2>
             <p class="description">Sumérgete en el mundo natural y contempla la gracia y elegancia de los insectos en nuestra colección de arte inspirada en la naturaleza, donde cada detalle te transportará a la majestuosidad del reino animal.</p>
-
-
+          </article> 
         </section>
 
         <section class="section4">
-
-                <img src="https://fciencias.ugr.es/images/stories/imagenes/nocheInvestigadores/rodeadosFosiles.jpg" alt="imagen fosil" width="300" height="200">
-                <h2 class="title">El legado del pasado</h2>
-                <p class="description">Explora el fascinante mundo de la paleontología y sumérgete en un viaje a través del tiempo para descubrir los misteriosos secretos que los fósiles guardan sobre la evolución y la historia de nuestro planeta.</p>
-
+          <a href="seccion-fosiles.html" target="main_iframe"><img src="https://fciencias.ugr.es/images/stories/imagenes/nocheInvestigadores/rodeadosFosiles.jpg" alt="imagen fosil" width="300" height="200"></a>
+          <article>   
+            <h2 class="title">El legado del pasado</h2>
+            <p class="description">Explora el fascinante mundo de la paleontología y sumérgete en un viaje a través del tiempo para descubrir los misteriosos secretos que los fósiles guardan sobre la evolución y la historia de nuestro planeta.</p>
+          </article> 
         </section>
+
         <section class="section5">
-
-                <img src="../img/img-escultura-efeso.jpg" alt="imagen fosil" width="300" height="200">
-                <h2 class="title">Escultura clásica </h2>
-                <p class="description">Admira la obra maestra del Renacimiento italiano, el icónico David de Miguel Ángel, y sumérgete en el mundo de la escultura clásica en nuestra destacada sección dedicada a las esculturas que han marcado la historia del arte.</p>
-           
+          <a href="coleccion.html" target="main_iframe"><img src="../img/img-escultura-efeso.jpg" alt="imagen fosil" width="300" height="200"></a>
+          <article>               
+              <h2 class="title">Escultura clásica </h2>
+              <p class="description">Admira la obra maestra del Renacimiento italiano, el icónico David de Miguel Ángel, y sumérgete en el mundo de la escultura clásica en nuestra destacada sección dedicada a las esculturas que han marcado la historia del arte.</p>
+          </article>
         </section>
-        <section class="section6">
 
-                <img src="../img/img-arquitectura-efeso.jpg" alt="imagen fosil" width="300" height="200">
-                <h2 class="title">Arquitectura histórica</h2>
-                <p class="description">Explora la grandeza de la arquitectura antigua con nuestra selección de monumentos emblemáticos, como el majestuoso Partenón, que te transportará a épocas pasadas y te maravillará con su belleza y esplendor.</p>
-           
+        <section class="section6">
+          <a href="coleccion.html" target="main_iframe"><img src="../img/img-arquitectura-efeso.jpg" alt="imagen fosil" width="300" height="200"></a>
+          <article>    
+            <h2 class="title">Arquitectura histórica</h2>
+            <p class="description">Explora la grandeza de la arquitectura antigua con nuestra selección de monumentos emblemáticos, como el majestuoso Partenón, que te transportará a épocas pasadas y te maravillará con su belleza y esplendor.</p>
+        </section>
+
+        <section class="section7">
+          <a href="informacion.html" target="main_iframe"><img src="../img/mapa.png" alt="imagen mapa" width="300" height="200"></a>
+          <article>     
+            <h2 class="title">Mapa e Información</h2>
+            <p class="description">Una sección que explora el área donde se encuentra el museo, destacando eventos significativos, figuras importantes y la evolución del lugar a lo largo del tiempo.</p>
+          </article>
+        </section>
+
+        <section class="section8">
+          <a href="coleccion.html" target="main_iframe"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Granada-Palacio_Carlos_V-P1050006.jpg/800px-Granada-Palacio_Carlos_V-P1050006.jpg" alt="imagen fosil" width="300" height="200"></a>
+          <article>    
+            <h2 class="title">Eventos y Actividades</h2>
+            <p class="description">Esta sección podría proporcionar información sobre eventos culturales, festivales, ferias y actividades recreativas que tienen lugar en el área cercana al museo.</p>
         </section>
     </section>
+  </main>
 
 </body>
 </html>

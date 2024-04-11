@@ -1,0 +1,210 @@
+/* Estilos generales */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+:root{
+    --logo-color: #e7d6ad;
+}
+*{
+    font-family:Montserrat;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5%;
+}
+
+/* Estilos de la presentación */
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.it-txt {
+    font-size: 2.8vw;
+    width: 70%;
+    background: linear-gradient(90deg, rgba(45, 32, 0, 1) 0%, rgba(69, 54, 0, 1) 35%, rgba(176, 110, 0, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.it2-img {
+    width: 30%;
+    filter: drop-shadow(6px 5px 4px #1d0112);
+    animation: animation 3s infinite ease;
+    max-width: 300px;
+}
+.it2-img img {
+    width: 60%;
+}
+.banner{
+    background-color: #f1e2bd;
+    background-image: url(../img/patron-museo.png);
+    background-size: 190px 180px;
+    width: 100%;
+    height: 18%;
+    position: absolute;
+    z-index: -1;
+    margin-bottom: 10px;
+}
+
+
+@media all and (max-width:450px) {
+    .it2-img img{
+        width: 200%;
+    }
+    .it-txt {
+        font-size: 4.5vw;
+    }
+    .banner{
+        height: 10%;
+    }
+}
+
+
+@media all and (max-width:450px) {
+    .it2-img {
+        width: 10vw;
+    }
+    .parent section img {
+        width: 90px;
+        height: 230px;
+    }
+}
+
+
+/* Estilos de las secciones */
+.parent {
+
+    margin-top: 10%;
+    height: auto;
+    gap: 1%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 3fr)); 
+    padding: 2%;
+    background-color: #ebebeb;
+}
+@media all and (max-width:740px) {
+    .parent{
+        gap:5%;
+        padding-bottom: 40%;
+    }
+    section .dias li {
+        font-size: 10px;
+        line-height: 0.2;
+      }
+    .mes{
+        margin-top: 2px;
+    }
+}
+
+.parent section{
+    h1{
+        font-size: xx-large;
+        margin: 1% 0 5% 0;
+
+    }
+}
+
+.horario{
+    p{
+        color:#555555;
+        margin-bottom: 3%;
+    }
+    a{
+        text-decoration: underline;
+        color: black;
+    }
+    .gratis{
+        margin-top: 3%;
+    }
+}
+
+.mes {
+    margin-top: 3%;
+    background-color: #f1e2bd00;
+    background-image: url(../img/patron-museo.png);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .mes ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mes ul p {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .semana {
+    margin: 0;
+    padding: 5px 0;
+    background-color: #ddd;
+  }
+  
+  .semana li {
+    display: inline-block;
+    width: 11.3%;
+    color: #666;
+    text-align: center;
+  }
+  
+  .dias {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .dias li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  .dias li .gratis {
+    padding: 5px;
+    background: #c4b09b;
+    color: white 
+  }
+  .dias li .cerrado{
+    padding: 5px;
+    background: #bc2d1a;
+    color: white;
+    border-radius: 100px;
+  }
+  .leyenda{
+    background-color: #ffffff2f;;
+    display: flex;
+    justify-content: space-around;
+    li .cerrado{
+        padding: 3px;
+    }
+    li .gratis{
+        padding: 3px;
+    }
+  }
+
+  /* Add media queries for smaller screens */
+  @media screen and (max-width:720px) {
+    .semana li, .dias li {width: 13%;}
+  }
+  
+  @media screen and (max-width: 420px) {
+    .semana li, .dias li {width: 12.5%;}
+    .dias li .gratis {padding: 2px;}
+  }
+  
+  @media screen and (max-width: 290px) {
+    .semana li, .dias li {width: 12.2%;}
+  }

@@ -1,0 +1,154 @@
+/* Estilos generales */
+
+:root{
+    --logo-color: #e7d6ad;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 5%;
+    padding: 0;
+}
+@media all and (max-width:450px) {
+
+    body {
+        margin: 2%;
+        overflow: hidden;
+    } 
+}
+
+
+/* Estilos de la presentación */
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.it-txt {
+    font-size: 2.8vw;
+    width: 70%;
+    background: linear-gradient(90deg, rgba(45, 32, 0, 1) 0%, rgba(69, 54, 0, 1) 35%, rgba(176, 110, 0, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.it2-img {
+    width: 30%;
+    filter: drop-shadow(6px 5px 4px #1d0112);
+    animation: animation 3s infinite ease;
+    max-width: 300px;
+}
+.it2-img img {
+    width: 60%;
+}
+.banner{
+    background-color: #f1e2bd;
+    background-image: url(../img/patron-museo.png);
+    background-size: 190px 180px;
+    width: 120%;
+    height:10vw;
+    position: absolute;
+    z-index: -1;
+}
+
+
+@media all and (max-width:450px) {
+    .it2-img img{
+        width: 100%;
+    }
+
+    .it-txt {
+        font-size: 4.5vw;
+    }
+    .banner{
+        height: 10%;
+    }
+    
+}
+
+
+
+/* Estilos de las secciones */
+.parent {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+
+    padding: 1%;
+}
+
+.parent section {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    border: 0px solid #cccccca1;
+    background-color: #ebebeb;
+    transition: box-shadow 0.3s;
+    padding-right: 3%;
+    max-width: 90vw;
+}
+
+
+.parent section img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 3% ;
+    object-fit:cover;
+    border-radius: 100%;
+}
+@media all and (max-width:600px) {
+    .parent section img {
+        width: 85px;
+        height: 85px;
+    }
+    .parent section p{
+        font-size: small;
+    }
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+h2{
+    margin-right: 10px;
+}
+.parent section .nota {
+    list-style-type: none;
+    display: flex;
+    justify-content:left;
+    img{
+        width: 40px;
+        height: 65px;
+        object-fit:contain;
+        border-radius: 0;
+        margin: 0 0 0 -10px;
+    }
+}
+
+.gris{
+    filter: grayscale(100%);
+}
+
+.title {
+    color: #333;
+    font-size: 24px;
+}
+
+.description {
+    color: #a7a7a7;
+    font-size: 1rem;
+    margin-top: 0%;
+}
+
+/* Animación */
+@keyframes animation {
+    0% { transform: scale(1); } 
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); } 
+}
+

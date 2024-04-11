@@ -22,7 +22,7 @@
             </li>
             <!-- Login -->
             <li class="form-head-top">
-                <form id="loginform" action="html/alta.html">
+                <form id="loginform" action="html/altausuarios.html">
                     <input type="text" name="usuario" placeholder="Usuario" required>
                     <input type="password" placeholder="Contraseña" name="password" required>
                     <button type="submit" title="Alta" name="Alta">Alta</button>
@@ -32,37 +32,41 @@
         <!-- Barra de navegación -->
         <nav class="main-nav">
             <ul class ="nav-list">
-                <li><a href="html/inicio.html" target="main_iframe">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li class="cnto"><a  href="#contacto">Contacto</a></li>
+                <li class="ini"><a href="html/inicio.html" target="main_iframe">Inicio</a></li>
+                <li class="des"><a href="html/coleccion.html" target="main_iframe">Colección</a></li>
+                <li class="des"><a href="html/visita.html" target="main_iframe">Visita</a></li>
+                <li class="des"><a href="html/seccion-exposiciones.html" target="main_iframe">Exposiciones</a></li>
+                <li class="des"><a href="html/informacion.html" target="main_iframe">Información</a></li>
+                <li class="des"><a href="html/experiencias.html"  target="main_iframe">Experiencias</a></li>
+    
             </ul>
+            <!-- Boton de naveacion responsive -->
+            <section class="desplegable">
+                <button class="btn"><i class="fa-solid fa-bars"></i></button>
+                <section class="desplegable-content">
+                    <a href="html/inicio.html" target="main_iframe">Inicio</a>
+                    <a href="html/coleccion.html" target="main_iframe">Colección</a>
+                    <a href="html/visita.html" target="main_iframe">Visita</a>
+                    <a href="html/seccion-exposiciones.html" target="main_iframe">Exposiciones</a>
+                    <a href="html/informacion.html"  target="main_iframe">Información</a>
+                    <a href="html/experiencias.html"  target="main_iframe">Experiencias</a>
+                </section>
+            </section>
         </nav>
+
     </header>
         <!-- Barra lateral de navegacion -->
-        <aside class="menu">
-            <nav class="side-menu">
-                <input class="boton-desplegar" type="checkbox" id="ossm" name="ossm" checked>
-                <label for="ossm" title="Expand/Collapse Menu"></label>
-                <ul>
-                    <li><a href="#"><i class="fas fa-home blue" title="Dashboard"></i> <span>Exposiciones</span></a></li>
-                    <li><a href="#"><i class="fas fa-file-import purple" title="Quotes"></i> <span>Artistas</span></a></li>
-                    <li><a href="#"><i class="fas fa-file-export green" title="Orders"></i> <span>Orders</span></a></li>
-                    <li><a href="#"><i class="fas fa-file-invoice-dollar orange" title="Invoices"></i> <span>Invoices</span></a></li>
-                    <li><a href="#"><i class="fas fa-concierge-bell ice" title="eServices"></i> <span>eServices</span></a></li>
-                    <li><a href="#"><i class="fas fa-chart-area red" title="Reports"></i> <span>Reports</span></a></li>
-                    <li><a href="#"><i class="fas fa-user blue" title="Profile"></i> <span>Profile</span></a></li>
-                </ul>
-            </nav>
-        </aside>
-    <!-- Parte principal de la pagina -->
+        <aside></aside>
+    <!-- Parte principal de la pagina que va cambiando -->
     <main>
-        <iframe name="main_iframe"src="html/inicio.html" title="W3Schools Free Online Web Tutorials">
+        <iframe name="main_iframe"src="html/inicio.html" title="Iframe principal navegacion">
         </iframe>
     </main>
+
+    <!-- footer Parte final -->
     <footer>
-        <p>Practica 1. Programación Web. Grado en ingeniería Informśtica UGR.</p>
-        <span>D. Martín Cerezo ©</span>
+        <p>Realizado por <span><a href="html/contacto.html">D. Martín Cerezo </a></span>©.</p>
+        <span><a href="como_se_hizo.pdf">¿Como se hizo?</a></span>
     </footer>
 </section>
 

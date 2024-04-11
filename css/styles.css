@@ -11,7 +11,7 @@
 }
 
 *{
-  font-family:Montserrat;
+    font-family:Montserrat;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,6 +32,7 @@ header, footer {
     padding: 1vh; /*Ocupa 10% del en altura*/
 }
 
+
 /* footer ************************************ */
 footer {
     display: flex;
@@ -43,12 +44,21 @@ footer {
     p{
       font-size: 12px;
       margin-top: -4px;
+
     }
+
     span{
       font-size: 14px;
       margin-top: -5px;
-
+      a{
+        text-decoration: none;
+        color:#fff;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
     }
+
 }
 
 @media all and (max-width: 450px) {
@@ -82,7 +92,7 @@ header img {
 }
 
 .logo{
-  max-width: 124px;
+  max-width: 90px;
   padding: 3px;
   margin-left: 10px;
 }
@@ -94,7 +104,7 @@ header img {
   }
 }
 
-/* Texto central ------------*/
+/* Texto central --------------*/
 .container h1{
   font-size: 30px;
 }
@@ -105,7 +115,7 @@ header img {
 }
   
 
-/*Formulario ---------------*/
+/*Formulario ------------------*/
 @media all and (max-width: 450px) {
   input[type=text], select {
     font-size: x-small;
@@ -123,32 +133,33 @@ header img {
 .form-head-top{
   max-width: 20vw;
 }
+
 input[type=text], select {
   width: 90%;
-  padding: 6px 15px;
+  padding: 1px 10px;
   margin:  0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 3px;
   box-sizing: border-box;
 }
 
 input[type=password], select {
   width: 90%;
-  padding: 6px 15px;
-  margin: 2px 0;
+  padding: 2px 10px;
+  margin: 1px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 3px;
   box-sizing: border-box;
 }
 button[type=submit] {
   width: 90%;
   background-color: var(--logo-color);
   color: white;
-  margin: 2px 0;
+  margin: 1px 0;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -158,23 +169,10 @@ button[type=submit]:hover {
 }
 
 /* ----------- */
-/* Barra de navegacion superior----- */
-
-@media all and (max-width: 450px) {
-  nav li a {
-    font-size: x-small;
-    padding: 4px 9px;
-
-  }
-  
+/* Barra de navegacion superior-------- */
+nav{
+  position: relative;
 }
-@media all and (max-width: 350px) {
-  nav li.cnto {
-    display: none;
-  }
-  
-}
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -208,6 +206,62 @@ nav a:hover:not(.active) {
   background-color: var(--second-color);
 }
 
+/* Boton auxiliar para patanllas pequeñas */
+.btn {
+  background-color: #3a3838;
+  color: white;
+  padding: 0px;
+  font-size: 0px;
+  border: none;
+}
+
+.desplegable {
+  position: absolute;
+  display: inline-block;
+  left: 49%;
+  top:30%;
+  visibility: hidden;
+  z-index: 11;
+}
+
+.desplegable-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+.desplegable-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.desplegable-content a:hover {background-color: #ddd; color: #ccc;}
+
+.desplegable:hover .desplegable-content {display: block;}
+
+.desplegable:hover .btn {  background-color: var(--second-color);}
+
+@media all and (max-width: 700px) {
+  .nav-list ul li a{
+    visibility: hidden;
+  }
+  .ini{
+    visibility: hidden;
+  }
+  .des{
+    display: none;
+  }
+
+  .desplegable{
+    visibility: visible;
+  }
+}
+
 
 /* Estilo para pagina main con iframe********************* */
   iframe{
@@ -215,110 +269,3 @@ nav a:hover:not(.active) {
     height: 100%;
     border: none;
   }
-
-  /* Menu lateral Colapsable  --------------------------------*/
-  aside {
-    background-color: var(--background-nav-color);
-    width: auto;
-  }
-
-  /* Boton para desplegar menu----------------------------. */
-    /* Esconder checkbox---------*/
-    nav.side-menu > input[type=checkbox] {
-      display:none;
-    }
-    /* Mover UL debajo de Label --------------------*/
-    nav.side-menu > input[type=checkbox] + label {
-      margin:1em;
-    }
-    /* Icono cliclable para remplazar checkbox ----*/
-    nav.side-menu > input[type=checkbox] + label::after {
-      opacity:1;
-      color:#e7d6ad;
-      font-family: "Font Awesome 5 Free";
-      content: "\f150";
-      font-size: 32px;
-      font-weight:900;
-      position:absolute;
-      top: 17%;
-      left: 0.7vw;
-      height: 32px;
-      width: 32px;
-      line-height: 32px;
-      text-align: center;
-      transform:rotate(-90deg);
-      cursor: pointer;
-    }
-    @media all and (max-width:450px) {
-      nav.side-menu > input[type=checkbox] + label::after {
-        opacity:1;
-        color:#e7d6ad;
-        font-family: "Font Awesome 5 Free";
-        content: "\f150";
-        font-size: 28px;
-        position: absolute;
-        top: 14.8vh;
-        left: 0.7vw;
-      }
-    }
-    /* Cambio de icono cuando se clica */
-    nav.side-menu > input[type=checkbox]:checked + label::after {
-      transform:rotate(90deg);
-    }
-    /* Esconder meni cuando se pulsa */
-    nav.side-menu > input[type=checkbox]:checked + label + ul {
-      width:38px;
-      overflow:hidden;
-      span {
-        display:none;
-      }
-    }
-  
-  /* Estilo menu */
-
-  .side-menu {
-    overflow:hidden;
-    padding-top: 22%;
-    
-    ul {
-      padding-right: 0px;
-      width:200px;
-      min-width: 63px;
-      margin-right: 0px;
-    }
-
-    li {
-      border-bottom:solid 0px var(--logo-color);
-      position:relative;
-      list-style-type:none;
-      width: 100%;
-    }
-    li a {
-      color: var(--color-letras-aside);
-      text-decoration:none;
-    }
-    li a i {
-      font-size:32px;
-      
-    }
-
-    @media all and (max-width:450px) {
-      li a i {
-        font-size:16px;
-      }
-      li a span{
-        font-size:12px;
-      }
-      ul {
-        padding-inline-start:0px;
-        width:145px;
-        min-width: 30px;
-      }
-  }
-}
-  .blue {color:#0598D1;}
-  .purple {color:#A05DED;}
-  .green {color:#56C833;}
-  .orange {color:#FD8342;}
-  .ice {color:#54CED5;}
-  .red {color:#F66666;}

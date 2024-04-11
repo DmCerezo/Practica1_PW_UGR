@@ -1,0 +1,184 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Estilos específicos */
+h1 {
+    margin: 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Estilos para el menú lateral */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 50px; /* Alineación con el encabezado */
+    color: #fff;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #222;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para los elementos de usuario en el header */
+.user-actions {
+    margin-left: 20px; /* Espacio entre el menú de navegación y los elementos de usuario */
+}
+
+.user-actions form,
+.user-actions a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Estilos para el menú lateral */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 50px; /* Alineación con el encabezado */
+    color: #fff;
+    transition: left 0.3s ease; /* Transición suave al mostrar/ocultar */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #222;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para el botón de alternar */
+.sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Estilos para el contenido */
+.container {
+    margin-left: 200px; /* Ajuste de margen para el contenido principal */
+    transition: margin-left 0.3s ease; /* Transición suave al mostrar/ocultar la barra lateral */
+}
+
+.sidebar-toggle + .sidebar {
+    left: -200px; /* Oculta la barra lateral inicialmente */
+}
+
+.sidebar-toggle:checked + .sidebar {
+    left: 0; /* Muestra la barra lateral cuando se hace clic en el botón */
+}
+
+.sidebar-toggle:checked + .sidebar + .container {
+    margin-left: 0; /* Ajuste de margen cuando la barra lateral está activa */
+}
+
+
+
+
+section.amiibo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 400%;
+    height: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #01A623;
+    background-image: url(/assets/img/patterns/green-triangles.png);
+    background-size: 156px 154.5px;
+    background-position: 50% 28%;
+    z-index: -1;
+}
