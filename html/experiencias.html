@@ -3,127 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiencias del museo</title>
+    <title>Experiencias en el museo</title>
+    <link rel="stylesheet" href="../css/comun/styles-cabecera-footer.css">
+    <link rel="stylesheet" href="../css/comun/styles-banner.css">
     <link rel="stylesheet" href="../css/styles-experiencias.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
 </head>
 <body>
-    
+    <!-- HEADER -->
     <header>
-        <section class="presentacion">
-            <div class="it-txt">
-                <h1>Experiencias de visitantes</h1>
-            </div>
-            <div class="it2-img">
-                <img  src="../img/star-icon.png" alt="estrella">
-            </div>
-            <div class="banner"></div>
-        </section>
+            <ul class="head-top">
+              <!-- Logo -->
+              <li>
+                  <a href="../index.html"><img class="logo" src="../img/M3.png" alt="Logo museo"></a>
+              </li>
+              <!-- Nombre museo -->
+              <li class="nombre-museo">
+                  <h1>Museo Sócrates</h1>
+              </li>
+              <!-- Login -->
+              <li class="form-head-top">
+                  <form id="loginform" action="altausuarios.html">
+                      <input type="text" name="usuario" placeholder="Usuario" required>
+                      <input type="password" placeholder="Contraseña" name="password" required>
+                      <button type="submit" title="Alta" name="Alta">Alta</button>
+                      <button type="submit" title="Inicio" name="Inicio">Iniciar</button>
+                  </form>
+              </li>
+          </ul>
+          <!-- Barra de navegación -->
+              <nav class="nav-menu">
+                  <input type="checkbox" id="check">    
+                  <label for="check" class="checkbtn">
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-square-plus"></i>
+                      <i class="fa-solid fa-square-minus"></i>
+                  </label>
+                  <ul class ="nav-list">
+                      <li class="ini"><a href="../index.html">Inicio</a></li>
+                      <li class="des"><a href="coleccion.html" >Colección</a></li>
+                      <li class="des"><a href="visita.html">Visita</a></li>
+                      <li class="des"><a href="exposiciones.html" >Exposiciones</a></li>
+                      <li class="des"><a href="informacion.html" >Información</a></li>
+                      <li class="des"><a href="experiencias.html" >Experiencias</a></li>
+                  </ul>
+              </nav>
     </header>
+    
+    <main>
+        <section class="presentacion">
+                <div class="it-txt">
+                    <h1>Experiencias de visitantes</h1>
+                </div>
+                <div class="it2-img">
+                    <img  src="../img/emoji.png" alt="emoji">
+                </div>
+                <div class="banner"></div>
+        </section>
 
-    <section class="parent">
-        <!-- Opinión 0 -->
+        <section class="parent">
+            <!-- Opinión 0 -->
+                <section class="section0">
+                    <img src="https://acnhcdn.com/latest/NpcBromide/NpcSpRco.png"            
+                    alt="pintura IA">
+                    <article>
+                        <article class="nota">
+                            <h2 class="title">Toom Nook</h2>
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">                    
+                        </article>
+
+                        <p class="description"><b>¡Una experiencia inolvidable!</b><br> No te puedes perder. Desde los fósiles hasta las criaturas marinas, el museo ofrece una aventura educativa y emocionante. ¡Incluso a un emprendedor como yo le encantó la experiencia! ¡Definitivamente vale la pena visitarlo en tu próxima visita a la isla! </p>
+                    </article>
+                </section>
+            <!-- Opinión 1 -->
             <section class="section0">
-                <img src="https://acnhcdn.com/latest/NpcBromide/NpcSpRco.png"            
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhYWRobcaHYTX1011ju81sjvhDe-BilsN9f0KMFIARm8hZlR_vqnVcAfNeEYQ6CJ2BBo&usqp=CAU"            
                 alt="pintura IA">
                 <article>
                     <article class="nota">
-                        <h2 class="title">Toom Nook</h2>
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">                    
+                        <h2 class="title">Max</h2>
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">                    
                     </article>
 
-                    <p class="description"><b>¡Una experiencia inolvidable!</b><br> No te puedes perder. Desde los fósiles hasta las criaturas marinas, el museo ofrece una aventura educativa y emocionante. ¡Incluso a un emprendedor como yo le encantó la experiencia! ¡Definitivamente vale la pena visitarlo en tu próxima visita a la isla! </p>
+                    <p class="description"><b>¡Una experiencia verdaderamente única!</b><br> Las exhibiciones son impresionantes y la variedad es inigualable. Sin embargo, ¡podría haber un poco más de interacción para mantener a los visitantes comprometidos! Aún así, es un destino obligado para los aficionados a la historia y la naturaleza.</p>
                 </article>
             </section>
-        <!-- Opinión 1 -->
-        <section class="section0">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhYWRobcaHYTX1011ju81sjvhDe-BilsN9f0KMFIARm8hZlR_vqnVcAfNeEYQ6CJ2BBo&usqp=CAU"            
-            alt="pintura IA">
-            <article>
-                <article class="nota">
-                    <h2 class="title">Max</h2>
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">                    
-                </article>
-
-                <p class="description"><b>¡Una experiencia verdaderamente única!</b><br> Las exhibiciones son impresionantes y la variedad es inigualable. Sin embargo, ¡podría haber un poco más de interacción para mantener a los visitantes comprometidos! Aún así, es un destino obligado para los aficionados a la historia y la naturaleza.</p>
-            </article>
-        </section>
-        <!-- Opinión 2 -->
-        <section class="section0">
-            <img src="https://i.blogs.es/juegos/16178/animal_crossing__switch_/fotos/noticias/animal_crossing__switch_-5136008.jpg"            
-            alt="pintura IA">
-            <article>
-                <article class="nota">
-                    <h2 class="title">Mili</h2>
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">                    
-                </article>
-
-                <p class="description"><b>¡Una experiencia encantadora y educativa</b><br>! Las exposiciones son fascinantes y están presentadas con tanto cuidado. Me sentí realmente inspirada al explorar cada rincón del museo. ¡Definitivamente lo recomendaría a cualquiera que busque una experiencia cultural en nuestra hermosa isla! </p>
-            </article>
-        </section>
-        <!-- Opinión 3 -->
-               <section class="section0">
-                <img src="../img/z.jpeg"            
+            <!-- Opinión 2 -->
+            <section class="section0">
+                <img src="https://i.blogs.es/juegos/16178/animal_crossing__switch_/fotos/noticias/animal_crossing__switch_-5136008.jpg"            
                 alt="pintura IA">
                 <article>
                     <article class="nota">
-                        <h2 class="title">Zaira</h2>
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">                    
+                        <h2 class="title">Mili</h2>
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">                    
                     </article>
 
-                    <p class="description"><b>¡Una experiencia absolutamente increíble!</b><br> Me sentí como si estuviera explorando un mundo mágico lleno de maravillas naturales y arte fascinante. Cada exhibición era simplemente hermosa y me dejó maravillada. Definitivamente volveré para más aventuras y descubrimientos. ¡No puedo recomendarlo lo suficiente!</p>
+                    <p class="description"><b>¡Una experiencia encantadora y educativa</b><br>! Las exposiciones son fascinantes y están presentadas con tanto cuidado. Me sentí realmente inspirada al explorar cada rincón del museo. ¡Definitivamente lo recomendaría a cualquiera que busque una experiencia cultural en nuestra hermosa isla! </p>
                 </article>
             </section>
-        <!-- Opinión 4-->
-        <section class="section0">
-            <img src="https://www.nintenderos.com/wp-content/uploads/2022/04/totakeke-animal-crossing-Cropped.png"            
-            alt="pintura IA">
-            <article>
-                <article class="nota">
-                    <h2 class="title">Totakeke</h2>
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">                    
-                </article>
+            <!-- Opinión 3 -->
+                <section class="section0">
+                    <img src="../img/z.jpeg"            
+                    alt="pintura IA">
+                    <article>
+                        <article class="nota">
+                            <h2 class="title">Zaira</h2>
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                            <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">                    
+                        </article>
 
-                <p class="description"><b>¡Una verdadera sinfonía de maravillas naturales y arte!</b><br>La tranquilidad del ambiente y la belleza de las exhibiciones me dejaron sin palabras. ¡Un lugar perfecto para inspirar nuevas canciones y dejar volar la imaginación! ¡Definitivamente una visita que no te puedes perder! </p>
-            </article>
-        </section>
-        <!-- Opinión 5 -->
-        <section class="section0">
-            <img src="https://www.mundodeportivo.com/alfabeta/hero/2020/04/animal-crossing-new-horizon-canela.jpg?width=1200"            
-            alt="pintura IA">
-            <article>
-                <article class="nota">
-                    <h2 class="title">Canela</h2>
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">
-                    <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png">                    
-                </article>
+                        <p class="description"><b>¡Una experiencia absolutamente increíble!</b><br> Me sentí como si estuviera explorando un mundo mágico lleno de maravillas naturales y arte fascinante. Cada exhibición era simplemente hermosa y me dejó maravillada. Definitivamente volveré para más aventuras y descubrimientos. ¡No puedo recomendarlo lo suficiente!</p>
+                    </article>
+                </section>
+            <!-- Opinión 4-->
+            <section class="section0">
+                <img src="https://www.nintenderos.com/wp-content/uploads/2022/04/totakeke-animal-crossing-Cropped.png"            
+                alt="pintura IA">
+                <article>
+                    <article class="nota">
+                        <h2 class="title">Totakeke</h2>
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">                    
+                    </article>
 
-                <p class="description"><b>¡Una joya escondida en nuestra isla!</b><br>El ambiente tranquilo y las exposiciones bien cuidadas hacen que la visita sea una delicia para los amantes de la naturaleza. Me encantó perderme entre las obras de arte y los fósiles, ¡una experiencia que recomendaría a todos! </p>
-            </article>
+                    <p class="description"><b>¡Una verdadera sinfonía de maravillas naturales y arte!</b><br>La tranquilidad del ambiente y la belleza de las exhibiciones me dejaron sin palabras. ¡Un lugar perfecto para inspirar nuevas canciones y dejar volar la imaginación! ¡Definitivamente una visita que no te puedes perder! </p>
+                </article>
+            </section>
+            <!-- Opinión 5 -->
+            <section class="section0">
+                <img src="https://www.mundodeportivo.com/alfabeta/hero/2020/04/animal-crossing-new-horizon-canela.jpg?width=1200"            
+                alt="pintura IA">
+                <article>
+                    <article class="nota">
+                        <h2 class="title">Canela</h2>
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">
+                        <img  class="moneda gris" src="https://static.wikia.nocookie.net/animalcrossing/images/7/76/NH-Inventory_Icon-Coin.png" alt="moneda">                    
+                    </article>
+
+                    <p class="description"><b>¡Una joya escondida en nuestra isla!</b><br>El ambiente tranquilo y las exposiciones bien cuidadas hacen que la visita sea una delicia para los amantes de la naturaleza. Me encantó perderme entre las obras de arte y los fósiles, ¡una experiencia que recomendaría a todos! </p>
+                </article>
+            </section>
+            <section class="reseña-form full-width">
+                <form id="reseña-formulario">
+                    <p>Cuentanos tu experiencia</p>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    <textarea id="reseña" name="reseña" placeholder="Escribe tu reseña aquí" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
         </section>
-    </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Realizado por <span><a href="contacto.html">D. Martín Cerezo </a></span>©.</p>
+        <span><a href="../como_se_hizo.pdf">¿Como se hizo?</a></span>
+    </footer>
 </body>
 </html>

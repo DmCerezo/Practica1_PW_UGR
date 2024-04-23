@@ -3,25 +3,30 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Monserrat, Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #dadada;
+  background-color: #ebebeb;
+}
+iframe{
+  height: 100%;
+  width: 100%;
+  border: none;
 }
 
 
 /* Grid con cajas de informacion---------------------- */
 .parent {
-    margin: 5% 0% 0% 5%;
+    margin: 5% 0% 5% 5%;
     width: 80%;
     height: 100vh;
     padding: 1%;
-    background-color: aliceblue;
+    background-color: #ebebeb;
     display: grid;
     grid:
       "sidebar body" 1fr
       / auto 1fr;
-    gap: 8px;
+    gap: 5px;
   }
   
   .sidebar { 
@@ -31,33 +36,34 @@ body{
     }
   .body { 
         grid-area: body; 
-        background-color: aliceblue;
+        background-color: #f1f1f1;
     }
-
-  /* @media all and (max-width:600px) {
-    .parent {
-        width: 360px;
-        height: 800px;
-      
-        display: grid;
-        grid:
-          "sidebar body" 1fr
-          / auto 1fr;
-        gap: 8px;
-      }
-       */
-      .sidebar { grid-area: sidebar; }
-      .body { grid-area: body; }
+  .sidebar { grid-area: sidebar; }
+  .body { grid-area: body; }
 
 /* Estilos para el menú vertical */
 .sidebar p {
   font-weight: 600;
 }
 
+.sidebar button{
+  display: none;
+  width: 100%;
+  height: 5%;
+
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
 .menu-item {
     margin-bottom: 10px;
     width: 90%;
 
+}
+a:active{
+  color: black;
 }
 
 .menu-link {
@@ -69,24 +75,69 @@ body{
     padding: 5px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    width: fit-content;
 }
 
 .menu-link:hover {
     background-color: #ddd;
 }
+.next{
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  max-height:30px ;
+}
+.collapsible{
+  visibility: hidden;  
+}
 
-@media all and (max-width:600px) {
-
-  .menu-link {
-    margin-left:0px;
-  }
+/* Adaptacion para moviles */
+@media all and (max-width: 850px) {
   .parent {
     width: 100%;
-    margin-left:0px;
-    }
-    .sidebar { 
-
-      width: 18vw;
-      padding: 1%;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
   }
+  .menu-link{
+    width: fit-content;
+  }
+
+  .sidebar {
+    width: auto;
+    padding: 10px; 
+    font-size: 14px; 
+  }
+
+  .body {
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* Estilo para el botón de filtrar */
+  .collapsible {
+    visibility:visible;  
+    cursor: pointer;
+    background-color: #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Estilo para el sidebar cuando el checkbox está marcado */
+  .toggle-checkbox:checked + .collapsible + .sidebar {
+    display: block;
+  }
+
+  /* Ocultar el sidebar inicialmente */
+  .sidebar {
+    display: none;
+  }
+  .next:last-child{
+    margin-right: 11px;
+  }
+
+  
 }

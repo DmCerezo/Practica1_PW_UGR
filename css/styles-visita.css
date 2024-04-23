@@ -6,69 +6,108 @@
 body {
     margin: 0;
     padding: 0;
-    font-family:Montserrat;
+    font-family: Montserrat, Helvetica, sans-serif;
 }
-
-/* Estilos de la presentación */
-.presentacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.it-txt {
-    font-size: 2.8vw;
-    width: 70%;
-    background: linear-gradient(90deg, rgba(45, 32, 0, 1) 0%, rgba(69, 54, 0, 1) 35%, rgba(176, 110, 0, 1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.it2-img {
-    width: 30%;
-    filter: drop-shadow(6px 5px 4px #1d0112);
-    animation: animation 3s infinite ease;
-    max-width: 300px;
-}
-.it2-img img {
-    width: 60%;
-}
-.banner{
-    background-color: #f1e2bd;
-    background-image: url(../img/patron-museo.png);
-    background-size: 190px 180px;
-    width: 100%;
-    height: 15%;
-    position: absolute;
-    z-index: -1;
-}
-
 img{
-    max-width: 100%;
+    width: 100%;
+}
 
+.galeria-arte{
+    position: relative;
+}
+.t{
+    position: absolute;
+    font-size: 5vh;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+}
+.t:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.ac{
+    left: 79%;
+    bottom: 74%;
+}
+.ga{
+    left: 40%;
+    bottom: 97%;
+}
+.ja{
+    left: 3%;
+    bottom: 94%;
+}
+.ar{
+    left: 45%;
+    bottom: 10%;
+}
+@media all and (max-width:600px) {
+    .t{
+        position: absolute;
+        font-size: 2.5vh;
+        font-weight: 900;
+        color: black;
+    }
+    
 }
 
 
-/* Animación */
-@keyframes animation {
-    0% { transform: scale(1); } 
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); } 
+section.presentacion-principal .banner{
+    height: 100%;
 }
 
+section.presentacion{
+    margin: -35px 0 -10px 0;
+}
+section.presentacion .banner{
+    height: 100%;
+}
+section {
+    margin-bottom: 20px;
+    position: relative;
+}
+article {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    padding: 1.5%;
+    background-color: rgba(200, 200, 200, 0.5);
+    color: #100d0d;
+    font-size: 20px;
+    text-align: center;
+    max-height: 20vh;
+}
 
-@media all and (max-width:450px) {
-    .it2-img img{
-        width: 200%;
+@media all and (max-width:600px) {
+    .foto-museo{
+        height: 80vh;
+        object-fit:cover;
+        overflow-x: scroll;
+    }
+    article {
+        position: absolute;
+        bottom: 2%;
+    }
+    
+    section.presentacion{
+        margin: 0px 0 0px 0;
+        z-index: 3;
     }
 
-    .it-txt {
-        font-size: 4.5vw;
+    
+}
+@media all and (max-width:900px) {
+    .foto-museo{
+        height: 80vh;
+        object-fit:cover;
+        overflow-x: scroll;
     }
-    .banner{
-        height: 10%;
+    
+    section.presentacion{
+        margin: -45px 0 -20px 0;
     }
+
     
 }

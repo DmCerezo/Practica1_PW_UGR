@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obra El Greco</title>
+    <link rel="stylesheet" href="../../css/comun/styles-cabecera-footer.css">
+    <link rel="stylesheet" href="../../css/comun/styles-banner.css">
+    <link rel="stylesheet" href="../../css/styles-cuadro.css">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <base target="_parent">     <!--Para que actualice la pagina padre y no el iframe -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+            <ul class="head-top">
+              <!-- Logo -->
+              <li>
+                  <a href="../../index.html"><img class="logo" src="../../img/M3.png" alt="Logo museo"></a>
+              </li>
+              <!-- Nombre museo -->
+              <li class="nombre-museo">
+                  <h1>Museo Sócrates</h1>
+              </li>
+              <!-- Login -->
+              <li class="form-head-top">
+                  <form id="loginform" action="../altausuarios.html">
+                      <input type="text" name="usuario" placeholder="Usuario" required>
+                      <input type="password" placeholder="Contraseña" name="password" required>
+                      <button type="submit" title="Alta" name="Alta">Alta</button>
+                      <button type="submit" title="Inicio" name="Inicio">Iniciar</button>
+                  </form>
+              </li>
+          </ul>
+          <!-- Barra de navegación -->
+              <nav class="nav-menu">
+                  <input type="checkbox" id="check">    
+                  <label for="check" class="checkbtn">
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-square-plus"></i>
+                      <i class="fa-solid fa-square-minus"></i>
+                  </label>
+                  <ul class ="nav-list">
+                      <li class="ini"><a href="../../index.html">Inicio</a></li>
+                      <li class="des"><a href="../coleccion.html">Colección</a></li>
+                      <li class="des"><a href="../visita.html">Visita</a></li>
+                      <li class="des"><a href="../exposiciones.html" >Exposiciones</a></li>
+                      <li class="des"><a href="../informacion.html" >Información</a></li>
+                      <li class="des"><a href="../experiencias.html" >Experiencias</a></li>
+                  </ul>
+              </nav>
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <section class="container">
+        <section class="image-container">
+            <img src="https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvbnljLTItMjY4LmpwZyIsInJlc2l6ZSwyMDAwLDIwMDAiXX0.kyLjy8saXwwv-oGbJBh7X0tgXbgo4aN-d5IcAxw7A2w.jpg" alt="La persistencia de la memoria">
+        </section>
+        <section class="bottom">
+            <article class="description">
+                <h2>La persistencia de la memoria</h2>
+
+                <p><br>
+                <b>Autor: </b>Salvador Dalí<br>
+                <b>Fecha: </b>1931<br>
+                <p>
+                <b>Descripción:</b>
+                La persistencia de la memoria, también conocido como Los relojes blandos
+                 o Los relojes derretidos,es un famoso cuadro del pintor Salvador Dalí pintado en 1931. Realizado mediante la
+                 técnica del óleo sobre lienzo, es de estilo surrealista y sus medidas son 24 x 33 cm. 
+
+                </p><br>
+                </p><br>
+                <p>
+                    <b>Más información:</b>
+                    Dalí, según él mismo, se inspiró en el queso camembert a la hora de añadir el homenaje al 
+                    cuadro, relacionándolos por su calidad de «tiernos, extravagantes, solitarios y 
+                    paranoico-críticos». Uno de los relojes cuelga en equilibrio de la rama de un árbol. 
+                    Más abajo, en el cuadro, otro se acopla
+                    a modo de montura sobre una cara con largas pestañas inspirada en una roca del cabo de Creus.
+                </p>
+            </article>
+            <article class="iframe-recomd">
+                <h2>Obras relacionadas</h2>
+                <iframe src="../subsecciones/coleccion_ObrasMagistrales.html" name="iframe_obras" title="Iframe remonedaciones" ></iframe>
+            </article>
+        </section>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Realizado por <span><a href="../contacto.html">D. Martín Cerezo </a></span>©.</p>
+        <span><a href="../../como_se_hizo.pdf">¿Como se hizo?</a></span>
+    </footer>     
+</body>
+</html>

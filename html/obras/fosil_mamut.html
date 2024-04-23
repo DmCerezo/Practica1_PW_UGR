@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fosil Museo</title>
+    <link rel="stylesheet" href="../../css/comun/styles-cabecera-footer.css">
+    <link rel="stylesheet" href="../../css/comun/styles-banner.css">
+    <link rel="stylesheet" href="../../css/styles-cuadro.css">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <base target="_parent">     <!--Para que actualice la pagina padre y no el iframe -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+            <ul class="head-top">
+              <!-- Logo -->
+              <li>
+                  <a href="../../index.html"><img class="logo" src="../../img/M3.png" alt="Logo museo"></a>
+              </li>
+              <!-- Nombre museo -->
+              <li class="nombre-museo">
+                  <h1>Museo Sócrates</h1>
+              </li>
+              <!-- Login -->
+              <li class="form-head-top">
+                  <form id="loginform" action="../altausuarios.html">
+                      <input type="text" name="usuario" placeholder="Usuario" required>
+                      <input type="password" placeholder="Contraseña" name="password" required>
+                      <button type="submit" title="Alta" name="Alta">Alta</button>
+                      <button type="submit" title="Inicio" name="Inicio">Iniciar</button>
+                  </form>
+              </li>
+          </ul>
+          <!-- Barra de navegación -->
+              <nav class="nav-menu">
+                  <input type="checkbox" id="check">    
+                  <label for="check" class="checkbtn">
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-square-plus"></i>
+                      <i class="fa-solid fa-square-minus"></i>
+                  </label>
+                  <ul class ="nav-list">
+                      <li class="ini"><a href="../../index.html">Inicio</a></li>
+                      <li class="des"><a href="../coleccion.html">Colección</a></li>
+                      <li class="des"><a href="../visita.html">Visita</a></li>
+                      <li class="des"><a href="../exposiciones.html" >Exposiciones</a></li>
+                      <li class="des"><a href="../informacion.html" >Información</a></li>
+                      <li class="des"><a href="../experiencias.html" >Experiencias</a></li>
+                  </ul>
+              </nav>
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <!-- Mamut -->
+    <section class="container">
+        <section class="image-container">
+            <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2023/05/01/16829530313648.jpg" alt="Mamut">
+        </section>
+        <section class="bottom">
+            <article class="description">
+                <h2>Mamut</h2>
+                <p><br>
+                    <b>Extinción: </b>Período Pleistoceno <br><i>hace aproximadamente 10,000 años </i>
+                </p>
+                <p>
+                    <b>Descripción:</b>
+                    Los mamuts eran enormes mamíferos peludos que pertenecían a la familia Elephantidae y estaban estrechamente relacionados con los elefantes modernos.
+                </p><br>
+                <p>
+                    <b>Más información:</b>
+                    Los mamuts vivieron durante la era del Pleistoceno y estaban adaptados a climas fríos. Se extinguieron al final del Pleistoceno, posiblemente debido a la caza excesiva por parte de los humanos y los cambios en el clima.
+                </p>
+            </article>
+            <article class="iframe-recomd">
+                <h2>Obras relacionadas</h2>
+                <iframe src="../subsecciones/coleccion_fosiles.html" name="iframe_obras_mamut" title="Iframe recomendaciones mamut" ></iframe>
+            </article>
+        </section>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Realizado por <span><a href="../contacto.html">D. Martín Cerezo </a></span>©.</p>
+        <span><a href="../../como_se_hizo.pdf">¿Como se hizo?</a></span>
+    </footer>     
+</body>
+</html>

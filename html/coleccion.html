@@ -4,70 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coleccion del museo</title>
-    <link rel="stylesheet" href="../css/comun/styles-cabecera.css">
+    <link rel="stylesheet" href="../css/comun/styles-cabecera-footer.css">
+    <link rel="stylesheet" href="../css/comun/styles-banner.css">
     <link rel="stylesheet" href="../css/styles-coleccion.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
 </head>
 <body>
     
-    <header>
+  <!-- HEADER -->
+  <header>
+    <ul class="head-top">
+      <!-- Logo -->
+      <li>
+          <a href="../index.html"><img class="logo" src="../img/M3.png" alt="Logo museo"></a>
+      </li>
+      <!-- Nombre museo -->
+      <li class="nombre-museo">
+          <h1>Museo Sócrates</h1>
+      </li>
+      <!-- Login -->
+      <li class="form-head-top">
+          <form id="loginform" action="altausuarios.html">
+              <input type="text" name="usuario" placeholder="Usuario" required>
+              <input type="password" placeholder="Contraseña" name="password" required>
+              <button type="submit" title="Alta" name="Alta">Alta</button>
+              <button type="submit" title="Inicio" name="Inicio">Iniciar</button>
+          </form>
+      </li>
+  </ul>
+  <!-- Barra de navegación -->
+      <nav class="nav-menu">
+          <input type="checkbox" id="check">    
+          <label for="check" class="checkbtn">
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-square-plus"></i>
+              <i class="fa-solid fa-square-minus"></i>
+          </label>
+          <ul class ="nav-list">
+              <li class="ini"><a href="../index.html">Inicio</a></li>
+              <li class="des"><a href="coleccion.html">Colección</a></li>
+              <li class="des"><a href="visita.html">Visita</a></li>
+              <li class="des"><a href="exposiciones.html" >Exposiciones</a></li>
+              <li class="des"><a href="informacion.html" >Información</a></li>
+              <li class="des"><a href="experiencias.html" >Experiencias</a></li>
+          </ul>
+      </nav>
+</header>
+
+
         <section class="presentacion">
             <div class="it-txt">
-                <h1>Coleccion Permanente</h1>
+                <h1>Colección Permanente</h1>
             </div>
             <div class="it2-img">
                 <img src="https://i.pngimg.me/thumb/f/720/comdlpng6937990.jpg" alt="mona lisa">
             </div>
             <div class="banner"></div>
         </section>
-    </header>
 
-    <a href="seccion-fosiles.html" target="main_iframe"></a>
 
     <section class="parent">
         <!-- Sidebar -->
+        <input type="checkbox" id="desplegable" class="toggle-checkbox">
+        <label for="desplegable" class="collapsible">Filtrar</label>
         <section class="sidebar">
             <p>TIPO</p>
             <article class="menu-item">
-                <a href="coleccion_ObrasMagistrales.html" target="iframe_obras" class="menu-link">Pintura</a>
-                <a href="seccion-fosiles.html" target="iframe_obras" class="menu-link">Arqueologia</a>
-                <a href="#pinturas-tipo" class="menu-link">Francisco de Goya</a>
-                <a href="#pinturas-tipo" class="menu-link">Nakamura Nazako</a>
+                <a href="subsecciones/coleccion_ObrasMagistrales.html" target="iframe_obras" class="menu-link">Pintura</a>
+                <a href="subsecciones/coleccion_fosiles.html" target="iframe_obras" class="menu-link">Paleontolgía</a>
+                <a href="subsecciones/coleccion_acuario.html" target="iframe_obras" class="menu-link">Acuario</a>
+                <a href="#pinturas-tipo" class="menu-link">Entomología</a>
+                <a href="/html/subsecciones/subseccionIA.html" target="iframe_obras" class="menu-link">Exposiciones</a>
             </article>
             <p>AUTORES</p>
             <article class="menu-item">
-                <a href="#pinturas-tipo" class="menu-link">Diego Velazquez</a>
-                <a href="#pinturas-tipo" class="menu-link">El Greco</a>
-                <a href="#pinturas-tipo" class="menu-link">Francisco de Goya</a>
-                <a href="#pinturas-tipo" class="menu-link">Nakamura Nazako</a>
-                <a href="#pinturas-tipo" class="menu-link">Anonimo</a>
-                <a href="#pinturas-tipo" class="menu-link">Midjourney</a>
+                <a href="subsecciones/coleccion_Diego_velazquez.html" target="iframe_obras" class="menu-link">Diego Velazquez</a>
+                <a href="subsecciones/coleccion_El_Greco.html" target="iframe_obras" class="menu-link">El Greco</a>
+                <a href="subsecciones/coleccion_Goya.html" target="iframe_obras" class="menu-link">Francisco de Goya</a>
+                <a href="subsecciones/coleccion_Nakamura.html" target="iframe_obras"  class="menu-link">Nakamura Nazako</a>
+                <a href="subsecciones/coleccion_fosiles.html" target="iframe_obras" class="menu-link">Anonimo</a>
+                <a href="/html/subsecciones/subseccionIA.html" target="iframe_obras" class="menu-link">Midjourney</a>
             </article>
             <p>TEMA</p>
             <article class="menu-item">
-                <a href="#pinturas-artista" class="menu-link">Fauna</a>
-                <a href="#pinturas-artista" class="menu-link">Flora</a>
-                <a href="#pinturas-artista" class="menu-link">Bodegón</a>
-                <a href="#pinturas-artista" class="menu-link">Retrato</a>
-                <a href="#pinturas-artista" class="menu-link">Religioso</a>
+                <a href="subsecciones/coleccion_acuario.html" target="iframe_obras" class="menu-link">Fauna</a>
+                <a href="subsecciones/coleccion_historicas.html" target="iframe_obras" class="menu-link">Historico</a>
+                <a href="subsecciones/coleccion_Mitologico.html" target="iframe_obras"  class="menu-link">Mitológico</a>
+                <a href="subsecciones/coleccion_retratos.html" target="iframe_obras" class="menu-link">Retrato</a>
+                <a href="subsecciones/coleccion_religioso.html" target="iframe_obras" class="menu-link">Religioso</a>
             </article>
             <p>EPOCA</p>
             <article class="menu-item">
-                <a href="#pinturas-artista" class="menu-link">Siglo II a.C.</a>
-                <a href="#pinturas-artista" class="menu-link">Siglo VI a.C.</a>
-                <a href="#pinturas-artista" class="menu-link">Siglo V a.C.</a>
-                <a href="#pinturas-artista" class="menu-link">Siglo VI a.C.</a>
-                <a href="#pinturas-artista" class="menu-link">Siglo III a.C.</a>
+                <a href="subsecciones/coleccion_siglo_XIX.html" target="iframe_obras" class="menu-link">Siglo XIX d.C.</a>
+                <a href="subsecciones/coleccion_siglo_XV.html" target="iframe_obras" class="menu-link">Siglo XV d.C.</a>
+
             </article>
         </section>
     
         <!-- Body con iframe -->
         <section class="body">
-            <iframe src="coleccion_ObrasMagistrales.html" name="iframe_obras" title="Iframe principal navegacion" frameborder="0" width="100%" height="100%"></iframe>
+            <iframe src="subsecciones/coleccion_ObrasMagistrales.html" name="iframe_obras" title="Iframe principal navegacion"></iframe>
         </section>
-    </section>
+            <article class="next">
+                <a href="subsecciones/coleccion_ObrasMagistrales.html" target="iframe_obras" class="menu-link">Anterior</a>
+                <a  href="subsecciones/coleccion_fosiles.html" target="iframe_obras" class="menu-link">Siguiente</a>
+            </article>
+        </section>
     
-
+    <!-- FOOTER -->
+    <footer>
+        <p>Realizado por <span><a href="contacto.html">D. Martín Cerezo </a></span>©.</p>
+        <span><a href="../como_se_hizo.pdf">¿Como se hizo?</a></span>
+    </footer>       
 
 </body>
 </html>

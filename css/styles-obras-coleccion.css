@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Estilos generales */
+body {
+    font-family:Montserrat, 'Times New Roman', Times, serif;
+    margin: 3%; 
+}
+
+
+.parent {
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 2fr)); 
+    padding: 0% 0 5% 0;
+    section{
+        background-color: #dedede;
+
+    }
+    article{
+        padding: 4%;
+    }
+}
+    .parent section  img{    
+        border-radius: 1%;
+        object-fit:cover;
+        height: 240px;
+        
+    }
+
+    .parent section img:hover{
+        animation: animation 3s ease;
+        filter: drop-shadow(0px 0px 3px #000000);
+    }   
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    p{
+        color: #494949;
+    }
+    
+    b{
+        font-size: small;
+        color:rgb(173, 69, 0);
+    }
+    @media all and (max-width:700px) {
+        .parent {
+            gap: 2%;
+        }
+    }

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 
 *{
     padding: 0;
@@ -11,7 +12,7 @@ body {
 
 }
 main {
-    margin: 3%; 
+    margin: 2%; 
 }
 
 /* Div para animacion con saludo a la web ---------------*/
@@ -26,49 +27,72 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
- @media all and (max-width: 600px) {
-    .cont1 {
-        background-size: 130%;
-        background-position:-70px -5px;
-    }
-} 
 
-/* Degradado a blanco
-    .cont1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100.5%;
-    background: linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.9) 90%, rgba(255, 255, 255, 1) 100%);
-    z-index: 1;
-} */
-
-.div-socra, .div-bocadillo, .div-bocadillo2{
+.div-socra-c1, .div-bocadillo, .div-bocadillo2{
 top: 44%;
-left: 67%;
+left: 61%;
 position: absolute;
 width: 25%;
-z-index: 1;
+z-index: 2;
 filter: drop-shadow(6px 5px 4px #012521);
 animation: fadeIn 2s ease; 
-z-index: 4;
 }
 
-.div-bocadillo{
-    left: 40%;
-    top : 8% ;
-    width: 45%;
-    display: flex;
-    justify-content: center;
+.div-texto{
+    top : 17%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    animation: fadeIn 2s ease; 
+    filter: drop-shadow(3px 3px 0px #ffffff);
+    h1{
+        font-family: Montserrat;
+        font-weight:999;
+    }
+
 }
+.degradado{
+    font-size: 8vw;
+    background: linear-gradient(90deg, rgb(61, 38, 0) 0%, rgb(106, 62, 0) 35%, rgb(0, 0, 0) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-style: oblique;
+}
+.minus{
+    font-size: 3vw;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 35%, rgb(255, 0, 0) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-style: oblique;
+}
+.div-socra-c1:hover{
+    transform: scale(1.03);
+    transition: all .8s;
+}
+
 
 @media all and (max-width: 600px) {
-    .div-socra, .div-bocadillo, .line-1, .anim-escrib{
-    width: auto;
-    margin: 1%;
-        }
+    .cont1 {
+        background-position:-620px 0px;
+        height: 87vh;
+    }
+
+    .div-socra-c1{
+        width: 50vw;
+        top: 62%;
+        left: 50%;
+    }
+
+    .div-texto{
+        top : 35%;
+    }
+
+    .degradado{
+        font-size: 12vw;
+    }
+    .minus{
+        font-size: 4vw;
+    }
 } 
 
 /* Segunda imagen de fondo paralax */
@@ -84,16 +108,16 @@ z-index: 4;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
     .div-socra{
-        top: 45%;
-        left: 1%;
+        top: 40%;
+        left: 7%;
         position: absolute;
         width: 30%;
-        z-index: 1;
+        z-index: 3;
         filter: drop-shadow(6px 5px 4px #012521);
         animation: fadeIn 2s ease; 
-        z-index: 4;
     }
     .div-bocadillo2{
         left: 23%;
@@ -102,15 +126,7 @@ z-index: 4;
         display: flex;
         justify-content: center;
     }
-    .line-1{
-        width: 100%;
-        position: inherit;
-        margin-top: 12%;
-        border-right: 2px solid rgba(255,255,255,.75);
-        white-space: nowrap;
-        overflow: hidden;
-        font-size: 2.8vw;
-    }
+
     .line-2{
         position: inherit;
         margin-top: 12%;
@@ -128,28 +144,29 @@ z-index: 4;
 
     /* Animacion Escribir segundo paralax */
     .anim-escrib1{
-        animation: escrib1 2s steps(60) 4s 1 normal both,
+        animation: aparecer 0s 1s forwards,
+                   escrib 1.5s steps(60) 3s 1 normal both,
                    blinkTextCursor 800ms steps(44) infinite normal,
-                   desparecer 0s ease-in-out 8s forwards;
+                   desparecer 0s ease-in-out 6s forwards;
       }
     .anim-escrib2{ 
-        animation: aparecer 0s 8s forwards,
-                   escrib2 2s steps(60) 9s 1 normal both,
+        animation: aparecer 0s 6s forwards,
+                   escrib 1.5s steps(60) 8s 1 normal both,
                    blinkTextCursor 800ms steps(44) infinite normal,
-                   desparecer 0s ease-in-out 12s forwards;
+                   desparecer 0s ease-in-out 11s forwards;
     }
     .anim-escrib3{ 
-        animation: aparecer 0s 12s forwards,
-                   escrib2 2s steps(60) 13s 1 normal both,
+        animation: aparecer 0s 11s forwards,
+                   escrib 1.5s steps(60) 12s 1 normal both,
                    blinkTextCursor 800ms steps(44) infinite normal,
-                   desparecer 0s ease-in-out 17s forwards;
+                   desparecer 0s ease-in-out 15s forwards;
     }
     .anim-escrib4{ 
-        animation: aparecer 0s 17s forwards,
-                   escrib2 2s steps(60) 17s 1 normal both,
+        animation: aparecer 0s 15s forwards,
+                   escrib 1.5s steps(60) 16s 1 normal both,
                    blinkTextCursor 800ms steps(44) infinite normal;
     }
-}
+
 
 @keyframes fadeIn {
     10% {opacity: 0;
@@ -187,31 +204,9 @@ img {
     height: auto;
 }
 
-.line-1{
-    position: inherit;
-    margin-top: 12%;
-    border-right: 2px solid rgba(255,255,255,.75);
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 3.6vw;
-}
-
-/* Animacion simulando escribir ------*/
-.anim-escrib{
-  animation: escrib 2s steps(60) 1s 1 normal both,
-             blinkTextCursor 800ms steps(44) infinite normal;
-}
-@keyframes escrib{
-  from{width: 0;}
-  to{width: 10em;}
-}
-@keyframes escrib1{
+  @keyframes escrib{
     from{width: 0;}
-    to{width: 15em;}
-  }
-  @keyframes escrib2{
-    from{width: 0;}
-    to{width: 19em;}
+    to{width: 19.3em;}
   }
 
 @keyframes blinkTextCursor{
@@ -219,254 +214,152 @@ img {
   to{border-right-color: transparent;}
 }
 
-
-/* Texto de seccion --------------------------*/
-
-
-/* Texto de presentacion --*/
-
-.Presenta-Museo {
-    display: flex;
-    flex-direction:row-reverse;
-    justify-content: center;
-    align-items: center;
-    position:static;
-    z-index: 5;
-    margin-top: calc(55.8vw - 63%);
-
-    .it-txt{
-        font-size: 3.4vw;
-        z-index: 2;
-        width: 70%;
-        background: linear-gradient(90deg, rgb(163, 117, 0) 0%, rgb(77, 63, 13) 35%, rgb(92, 58, 0) 100%);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+@media all and (max-width: 600px) {
+    .cont2{
+       height: 87vh;
     }
-    .it2-img {
-        width: 23%;
-        z-index: 3;
+    .div-socra{
+        width: 70vw;
+        top: 47%;
+        left: 12%;
     }
-
-    .banner{
-        background-color: #f1e2bd;
-        background-image: url(../img/patron-museo.png);
-        background-size: 150px 130px;
-        width: 100%;
-        height: 28%;
-        max-height: 15vw;
-        position: absolute;
-        z-index: 1;
+    .div-bocadillo2{
+        width: 93%;
+        left: 3%;
     }
+    .line-2{
+        b{
+            font-size: 4.6vw;
+        }
+    }
+    @keyframes escrib{
+        from{width: 0;}
+        to{width:30.5em;}
+      }
     
 }
-
-/* Texto presentacio general */
-
-.presentacion, .presentacion1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position:static;
-    z-index: 1;
-}
-.it-txt{
-    font-size: 2.8vw;
-    width: 70%;
-    background: linear-gradient(90deg, rgba(45,32,0,1) 0%, rgba(69,54,0,1) 35%, rgba(176,110,0,1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-.it2-img {
-    width: 20%;
-    filter: drop-shadow(6px 5px 4px #1d0112);
-    animation: animation 3s infinite ease;
-}
-
-.banner{
-    background-color: #f1e2bd;
-    background-image: url(../img/patron-museo.png);
-    background-size: 150px 130px;
-    width: 100%;
-    height: 23%;
-    max-height: 15vw;
-    position: absolute;
-    z-index: -1;
-}
-.presentacion1{
-    margin-top: calc(55.8vw*2 - 125%);
-    z-index: 3;
-}
-@media all and (max-width: 600px) {
-    .presentacion1{
-        margin-top: calc(55.8vw*2 - 123%);
-        z-index: 3;
-    }
-} 
-
-@media all and (max-width: 600px) {
-    .banner{ height: 10%; }
-}
-
-@keyframes animation {
-    0% { transform: scale(1); } 
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); } 
-}
-
 
 
 /* Carrusel de secciones------------------------------------- */
 
-ul.slides {
-    display: block;
+label{cursor: pointer;}
+
+/* Contenedor para centrar */
+.ContainerCenter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* Ocultal el input */
+input{display: none}
+
+/* Slider */
+.Carrusels{
+    height: 110vh;
+    width: 95vw;
     position: relative;
-    height: 600px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style: none;
+    overflow-x: hidden;
 }
 
-.slides * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+@media all and (max-width: 600px) {
+    .Carrusels{
+        height: 70vh;
+        width: 90vw;
+        position: relative;
+        overflow-x: hidden;
+      }
 }
-
-ul.slides input {
-    display: none; 
-}
-
-
-.slide-container { 
-    display: block; 
-}
-
-.slide-image {
-    display: block;
+.txt-carrusel{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0;
-    transition: all .7s ease-in-out;
-
-}   
-
-.slide-image img {
-    width: auto;
-    min-width: 100%;
-    height: 100%;
-}
-
-.slide-image article{
-    font-size: large;
-    position: absolute;
-    color: #000000;
-    top: 30%;
-    left: 30%;
-    max-width: 40%;
-    border-radius: 1%;
-    background-color: rgba(255, 255, 255, 0.757);
-    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e2e2e2c4;
+    left: 16%;
+    top:45%;
+    width: 70%;
+    max-width: 70%;
+    text-decoration: none;
     padding: 2%;
-    z-index: 9;
-    margin: 0 0 0 0;
-}
-@media all and (max-width:600px) {
-    .slide-image article{
-        left: 8%;
-        max-width: 80%;
+    font-weight: 00;
+    p{
+        font-size: larger;
+    }
+    b{
+        color: #000000;
+    }
+    h2{
+        color: #494949;
+
     }
 }
 
-.slide-image article:hover{
-    opacity: 1;
-
-}
-
-.carrusel-controls {
+.Carrusel{
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 8;
-    font-size: 100px;
-    line-height: 600px;
-    color: #9c9c9c;
+    background-size: cover;
+    overflow-y: hidden;
+    transition: all .5s ease;
+    background-position: center;
 }
 
-.carrusel-controls label {
+/* Estado 1 */
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(200%, 0);}
+/* Estado 2 */
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(100%, 0);}
+/* Estado 3 */
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(0%, 0);}
+
+
+/* Flechas */
+.Carrusels .ArrowLeft, .Carrusels .ArrowRight{
+    position: absolute;
+    height: 100%;
+    width: 2em;
+    align-items: center;
+    justify-content: center;
     display: none;
-    position: absolute;
-    padding: 0 20px;
-    opacity: 0.5;
-    transition: opacity .2s;
-    cursor: pointer;
+    user-select: none;
+    font-size: 5vw;
+    color: #999999;
 }
 
-.slide-image:hover + .carrusel-controls label{
-    opacity: 0.5;
+.Carrusels .ArrowLeft{left:0px;}
+.Carrusels .ArrowRight{right: 0px;}
+/* Configuracion de flechas individuales */
+#Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
+#Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
+#Slider3:checked ~ .Carrusels .Arrow3{display: flex;}
+
+
+/* Selectores */
+.Selectors {
+    width: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.carrusel-controls label:hover {
-    opacity: 1;
+.Selectors .Selector {
+    background-color: #e8e8e8;
+    height: 15px;
+    width: 15px;
+    display: block;
+    border-radius: 5px;
+    margin-left: 3px;
 }
 
-.carrusel-controls .prev-slide {
-    width: 10%;
-    text-align: left;
-    left: 0;
-}
-
-.carrusel-controls .next-slide {
-    width: 10%;
-    text-align: right;
-    right: 0;
-}
-
-.carrusel-ps {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    z-index: 8;
-    text-align: center;
-}
-
-.carrusel-ps .carrusel-p {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    margin: 10px;
-}
-
-input:checked + .slide-container .slide-image {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 1s ease-in-out;
-}
-
-input:checked + .slide-container .carrusel-controls label {
-     display: block; 
-}
-
-input#img-1:checked ~ .carrusel-ps label#img-p-1,
-input#img-2:checked ~ .carrusel-ps label#img-p-2,
-input#img-3:checked ~ .carrusel-ps label#img-p-3{
-	opacity: 1;
-}
-
-
-input:checked + .slide-container .nav label { display: block; }
-
+/* Condicionales para botón inferior */
+#Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {background-color: #999999;}
+#Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {background-color: #999999;}
+#Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {background-color: #999999;}
 
 /* Grid con cajas de informacion---------------------- */
 .parent {
@@ -474,6 +367,7 @@ input:checked + .slide-container .nav label { display: block; }
     gap: 5%;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 2fr)); 
     padding: 0% 0 5% 0;
+    margin-bottom: auto;
     section{
         background-image: url(../img/patron-museo.png);
     }
@@ -500,8 +394,27 @@ input:checked + .slide-container .nav label { display: block; }
         font-size: small;
         color:rgb(173, 69, 0);
     }
-    @media all and (max-width:700px) {
+    
+    @media all and (max-width: 1250px) {
         .parent {
-            gap: 2%;
+            margin-bottom: 10vh; /* 10% del alto de la ventana */
         }
     }
+    
+    @media all and (max-width: 1050px) {
+        .parent {
+            margin-bottom: 40vh; /* 30% del alto de la ventana */
+        }
+    }
+    
+    @media all and (max-width: 600px) {
+        .parent {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: auto; /* Evitar margen inferior */
+        }
+        .parent section{
+            margin-bottom: 5%;
+        }
+    }
+    

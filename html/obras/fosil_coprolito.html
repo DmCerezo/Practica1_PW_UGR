@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fosil Museo</title>
+    <link rel="stylesheet" href="../../css/comun/styles-cabecera-footer.css">
+    <link rel="stylesheet" href="../../css/comun/styles-banner.css">
+    <link rel="stylesheet" href="../../css/styles-cuadro.css">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <base target="_parent">     <!--Para que actualice la pagina padre y no el iframe -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+            <ul class="head-top">
+              <!-- Logo -->
+              <li>
+                  <a href="../../index.html"><img class="logo" src="../../img/M3.png" alt="Logo museo"></a>
+              </li>
+              <!-- Nombre museo -->
+              <li class="nombre-museo">
+                  <h1>Museo Sócrates</h1>
+              </li>
+              <!-- Login -->
+              <li class="form-head-top">
+                  <form id="loginform" action="../altausuarios.html">
+                      <input type="text" name="usuario" placeholder="Usuario" required>
+                      <input type="password" placeholder="Contraseña" name="password" required>
+                      <button type="submit" title="Alta" name="Alta">Alta</button>
+                      <button type="submit" title="Inicio" name="Inicio">Iniciar</button>
+                  </form>
+              </li>
+          </ul>
+          <!-- Barra de navegación -->
+              <nav class="nav-menu">
+                  <input type="checkbox" id="check">    
+                  <label for="check" class="checkbtn">
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-square-plus"></i>
+                      <i class="fa-solid fa-square-minus"></i>
+                  </label>
+                  <ul class ="nav-list">
+                      <li class="ini"><a href="../../index.html">Inicio</a></li>
+                      <li class="des"><a href="../coleccion.html">Colección</a></li>
+                      <li class="des"><a href="../visita.html">Visita</a></li>
+                      <li class="des"><a href="../exposiciones.html" >Exposiciones</a></li>
+                      <li class="des"><a href="../informacion.html" >Información</a></li>
+                      <li class="des"><a href="../experiencias.html" >Experiencias</a></li>
+                  </ul>
+              </nav>
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <!-- Coprolito -->
+    <section class="container">
+        <section class="image-container">
+            <img src="https://uvn-brightspot.s3.amazonaws.com/assets/vixes/btg/curiosidades.batanga.com/files/Coprolitos-informacion-en-heces-fosiles-2.jpg" alt="Coprolito">
+        </section>
+        <section class="bottom">
+            <article class="description">
+                <h2>Coprolito</h2>
+                <p><br>
+                    <b>Fecha: </b>Varía según el período en que se formó.
+                </p>
+                <p>
+                    <b>Descripción:</b>
+                    Los coprolitos son excrementos fosilizados de animales que han sido petrificados y preservados en la roca.
+                </p><br>
+                <p>
+                    <b>Más información:</b>
+                    Los coprolitos pueden proporcionar información valiosa sobre la dieta y el comportamiento de los animales prehistóricos.
+                </p>
+            </article>
+            <article class="iframe-recomd">
+                <h2>Obras relacionadas</h2>
+                <iframe src="../subsecciones/coleccion_fosiles.html" name="iframe_obras_coprolito" title="Iframe recomendaciones coprolito" ></iframe>
+            </article>
+        </section>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Realizado por <span><a href="../contacto.html">D. Martín Cerezo </a></span>©.</p>
+        <span><a href="../../como_se_hizo.pdf">¿Como se hizo?</a></span>
+    </footer>     
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obra El Greco</title>
+    <link rel="stylesheet" href="../../css/comun/styles-cabecera-footer.css">
+    <link rel="stylesheet" href="../../css/comun/styles-banner.css">
+    <link rel="stylesheet" href="../../css/styles-cuadro.css">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <base target="_parent">     <!--Para que actualice la pagina padre y no el iframe -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+            <ul class="head-top">
+              <!-- Logo -->
+              <li>
+                  <a href="../../index.html"><img class="logo" src="../../img/M3.png" alt="Logo museo"></a>
+              </li>
+              <!-- Nombre museo -->
+              <li class="nombre-museo">
+                  <h1>Museo Sócrates</h1>
+              </li>
+              <!-- Login -->
+              <li class="form-head-top">
+                  <form id="loginform" action="../altausuarios.html">
+                      <input type="text" name="usuario" placeholder="Usuario" required>
+                      <input type="password" placeholder="Contraseña" name="password" required>
+                      <button type="submit" title="Alta" name="Alta">Alta</button>
+                      <button type="submit" title="Inicio" name="Inicio">Iniciar</button>
+                  </form>
+              </li>
+          </ul>
+          <!-- Barra de navegación -->
+              <nav class="nav-menu">
+                  <input type="checkbox" id="check">    
+                  <label for="check" class="checkbtn">
+                      <i class="fa-solid fa-circle"></i>
+                      <i class="fa-solid fa-square-plus"></i>
+                      <i class="fa-solid fa-square-minus"></i>
+                  </label>
+                  <ul class ="nav-list">
+                      <li class="ini"><a href="../../index.html">Inicio</a></li>
+                      <li class="des"><a href="../coleccion.html">Colección</a></li>
+                      <li class="des"><a href="../visita.html">Visita</a></li>
+                      <li class="des"><a href="../exposiciones.html" >Exposiciones</a></li>
+                      <li class="des"><a href="../informacion.html" >Información</a></li>
+                      <li class="des"><a href="../experiencias.html" >Experiencias</a></li>
+                  </ul>
+              </nav>
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <section class="container">
+        <section class="image-container">
+            <img src="https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvdmVybWVlcl9sZWNoZXJhLTEuanBnIiwicmVzaXplLDIwMDAsMjAwMCJdfQ.Gof4a_LWyAvnJI0Psg4gjKgFvqWLzkbfl876mJowBgM.jpg" alt="La lechera">
+        </section>
+        <section class="bottom">
+            <article class="description">
+                <h2>La Lechera</h2>
+
+                <p><br>
+                <b>Autor: </b>Johannes Vermeer<br>
+                <b>Fecha: </b>1658-1660<br>
+                <p>
+                <b>Descripción:</b>
+                    Se trata de un óleo sobre lienzo de reducidas dimensiones, custodiado en el Rijksmuseum de Ámsterdam desde su adquisición en 1908.
+                </p><br>
+                </p>
+                <p>
+                    <b>Más información:</b>
+                    Esta pintura consigue unir de un modo magistral dos conceptos que en principio parecen antagónicos:
+                    una sensación de monumentalidad y un gran sosiego; 
+                    parece mostrar lo grande de las cosas pequeñas. 
+                    La criada se encuentra en su universo particular. El gesto inmortalizado por Vermeer 
+                    tiene algo de estatua antigua; está de pie, bañada en luz. El pintor ha utilizado sus colores: 
+                    el azul (realizado con un pigmento, el azul de ultramar, derivado del lapislázuli),
+                    y el amarillo, en sorprendente armonía.
+                </p>
+            </article>
+            <article class="iframe-recomd">
+                <h2>Obras relacionadas</h2>
+                <iframe src="../subsecciones/coleccion_ObrasMagistrales.html" name="iframe_obras" title="Iframe remonedaciones"></iframe>
+            </article>
+        </section>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Realizado por <span><a href="../contacto.html">D. Martín Cerezo </a></span>©.</p>
+        <span><a href="../../como_se_hizo.pdf">¿Como se hizo?</a></span>
+    </footer>     
+</body>
+</html>

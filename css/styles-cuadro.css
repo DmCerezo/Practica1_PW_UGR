@@ -6,14 +6,15 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 .image-container {
     flex-grow: 1;
-    margin-right: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .image-container img {
@@ -21,6 +22,8 @@ body {
     height: auto;
     max-width: 100%;
     display: block;
+    object-fit: contain;
+
 }
 
 .description {
@@ -31,8 +34,63 @@ body {
     .container {
         flex-direction: column;
     }
+    .bottom{
+        flex-direction: column;
+    }
 
     .image-container {
         margin-right: 0;
     }
+}
+
+
+.bottom {
+    display: flex;
+    flex-direction: row; /* Fila para colocar los elementos en línea */
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(255, 247, 236);
+    max-width: 100%;
+}
+
+.description {
+    flex-basis: auto;
+    padding: 3%;
+    background-color: rgb(255, 247, 236);
+    height: 54dvh;
+
+}
+
+iframe {
+    width: 100%;
+    height: 50vh; /* Altura automática para mantener la proporción */
+    scrollbar-width: none;
+    border: none;
+
+}
+
+
+.iframe-recomd{
+    width: 100%;
+    margin-top: 1%;
+    text-align: center;
+    h2{
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    .iframe-recomd{
+        width: 100%;
+    }
+    iframe {
+        width: 100%; /* Ancho fijo para el iframe */
+        height: 80vh; /* Altura automática para mantener la proporción */
+    }
+
 }
