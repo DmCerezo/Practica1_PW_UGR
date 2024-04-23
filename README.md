@@ -1,4 +1,4 @@
 # Practica1_PW_UGR
 
-Pintura midjournie
-https://i.redd.it/5zdzh5gijgsc1.jpeg
+Para ver la pagina web https://bahia.ugr.es/~davidmcerezo/Pe1/
+Espero que sea de ayuda :)
