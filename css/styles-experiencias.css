@@ -43,7 +43,7 @@ main {
     flex-direction:row;
     align-items: center;
     border: 0px solid #cccccca1;
-    background-color: #ebebeb;
+    background-color: #f3f3f3e0;
     transition: box-shadow 0.3s;
     padding-right: 3%;
     max-width: 90vw;

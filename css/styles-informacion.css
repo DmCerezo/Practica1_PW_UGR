@@ -23,7 +23,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 3fr)); 
     padding: 2%;
-    background-color: #ebebeb;
+    background-color: #ebebebb0;
 }
 @media all and (max-width:740px) {
     .parent{

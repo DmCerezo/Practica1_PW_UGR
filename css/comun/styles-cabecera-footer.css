@@ -127,37 +127,37 @@ header img {
   }
 
 }
-
+input{
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
 
 input[type=text], select {
   width: 90%;
-  padding: 1px 10px;
+  padding: 2px 10px;
   margin:  0;
-  display: inline-block;
+  display: block;
   border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
 }
 
 input[type=password], select {
   width: 90%;
   padding: 2px 10px;
   margin: 1px 0;
-  display: inline-block;
+  display: block;
   border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
 }
+
 button[type=submit] {
   width: 90%;
   background-color: var(--logo-color);
   color: white;
   margin: 2px 0;
-  border: none;
   border-radius: 3px;
+  border: none;  
   cursor: pointer;
-  box-sizing: border-box;
 }
+
 #loginform button[type="submit"] {
   width: 45%; /* Boton doble ancho de los botones */
 }
@@ -299,7 +299,5 @@ nav a:hover:not(.active) {
   nav label i{
     z-index: 100;
   }
-  #check:checked ~ .checkbtn .fa-square-minus {
-    display:block;
-  }
+  #check:checked ~ .checkbtn .fa-square-minus {display:block;}
 }
