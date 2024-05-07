@@ -125,6 +125,9 @@ a:active{
     width: 100%;
     text-align: center;
   }
+  .collapsible:hover {
+    background-color: #e4cd9c;
+  }
 
   /* Estilo para el sidebar cuando el checkbox está marcado */
   .toggle-checkbox:checked + .collapsible + .sidebar {
